@@ -1,0 +1,149 @@
+@charset "UTF-8";
+
+@media (min-width: 992px) {  
+
+
+:root {
+
+/*## Layout*/  
+
+--Very-dark-desaturated-blue: hsl(238, 29%, 16%);
+--Soft-red: hsl(14, 88%, 65%);
+
+/*#### Gradient*/
+
+/*Background gradient:*/
+--Gradient: linear-gradient(to bottom, hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+--Soft-violet: hsl(273, 75%, 66%);
+--Soft-blue: hsl(240, 73%, 65%);
+
+/*### Neutral*/
+
+/*#### Text*/
+
+--Very-dark-grayish-blue: hsl(237, 12%, 33%);
+--Dark-grayish-blue: hsl(240, 6%, 50%);
+
+/*#### Dividers*/
+
+--Light-grayish-blue: hsl(240, 5%, 91%);
+    
+--Kumbh:'Kumbh Sans', sans-serif;
+}
+
+body {
+    padding: 150px 0px;
+    background-image: var(--Gradient);
+    background-repeat: no-repeat;
+    
+}
+
+main {
+   
+    width: 900px;
+    min-height: 500px;
+    background-color: white;
+    border-radius: 30px;
+    font-family: var(--Kumbh);
+    font-size: 14px;
+    box-shadow: 1px 10px 30px #0000003d;
+    display: flex;
+}
+
+.container_01 {
+    position: relative;
+    overflow: hidden;
+}
+
+.bg-pattern-mobile {
+    display: none;
+}
+
+.illustration-woman-online-mobile {
+    display: none;
+}
+
+.bg-pattern-desktop {    
+    height: 900px;
+    width: 800px;
+    position: absolute;
+    transform: translate(-50%, -30%);
+    
+}
+
+.illustration-woman-online-desktop  {
+    width: 500px;
+    position: absolute;
+    transform: translate(-20%, 10%);
+}
+
+.illustration-box-desktop {
+    width: 200px;
+    position: absolute;
+    transform: translate(-49%, 95%);
+    /*transition: transform 0.5s ease-out;*/
+}
+
+/*.illustration-box-desktop:hover {
+    transform: translate(-68%, 95%);
+}*/
+
+.container_02 {
+    padding: 50px;
+}
+
+main h1 {
+    font-size: 2rem;
+}
+  
+h1 {
+    padding: 20px 0px 20px 4px;
+    font-size: 24px;
+}
+
+button {
+    text-decoration: none;
+    border: none;
+    background-color: transparent;
+}
+
+.drop .button-text {
+    font-weight: normal;
+  }
+  
+.drop.active .button-text {
+    font-weight: bold;
+}
+  
+.drop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 73%;
+}
+
+.button-text {
+    color: var(--Very-dark-grayish-blue);
+}
+
+.button-text:hover {
+    color: var(--Soft-red);
+}
+
+.slide {
+    font-size: 12px;
+    padding: 0px 40px 0px 6px;
+    color: var(--Dark-grayish-blue);
+}
+
+.line {
+ text-align: center;
+ height: 2px;
+ width: 312px;
+ background-color: var(--Light-grayish-blue);
+ margin: 15px 0px 15px 4px;
+}
+
+
+
+}

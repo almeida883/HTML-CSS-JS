@@ -1,0 +1,126 @@
+@charset "UTF-8";
+
+@media (max-width: 991px) {  
+
+
+:root {
+
+/*## Layout*/  
+
+--Very-dark-desaturated-blue: hsl(238, 29%, 16%);
+--Soft-red: hsl(14, 88%, 65%);
+
+/*#### Gradient*/
+
+/*Background gradient:*/
+--Gradient: linear-gradient(to bottom, hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+--Soft-violet: hsl(273, 75%, 66%);
+--Soft-blue: hsl(240, 73%, 65%);
+
+/*### Neutral*/
+
+/*#### Text*/
+
+--Very-dark-grayish-blue: hsl(237, 12%, 33%);
+--Dark-grayish-blue: hsl(240, 6%, 50%);
+
+/*#### Dividers*/
+
+--Light-grayish-blue: hsl(240, 5%, 91%);
+    
+--Kumbh:'Kumbh Sans', sans-serif;
+}
+
+body {
+    padding: 50px 0px;
+    background-image: var(--Gradient);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+main {
+    margin-top: 100px;
+    width: 340px;
+    min-height: 600px;
+    background-color: white;
+    border-radius: 30px;
+    font-family: var(--Kumbh);
+    font-size: 14px;
+    box-shadow: 1px 10px 30px #0000003d;
+}
+
+.illustration-woman-online-mobile {
+    width: 250px;
+    position: relative;
+    transform: translate(20%,-60%);
+    z-index: 2;
+}
+
+.bg-pattern-mobile {
+    width: 250px;
+    position: relative;
+    transform: translate(20%,-180%);
+    z-index: 1;
+    margin-bottom: -20px;
+}
+
+.illustration-woman-online-desktop  {
+    display: none;
+}
+
+.bg-pattern-desktop {
+    display: none;
+}
+
+.illustration-box-desktop {
+    display: none;
+}
+  
+.container_01 {
+    margin-bottom: -130px;
+}
+
+h1 {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+button {
+    text-decoration: none;
+    border: none;
+    background-color: transparent;
+}
+
+.drop .button-text {
+    font-weight: normal;
+  }
+  
+.drop.active .button-text {
+    font-weight: bold;
+}
+  
+.drop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.button-text {
+    color: var(--Very-dark-grayish-blue);
+}
+
+.slide {
+    font-size: 12px;
+    padding: 0px 40px 0px 6px;
+    color: var(--Dark-grayish-blue);
+}
+
+.line {
+ text-align: center;
+ height: 2px;
+ width: 316px;
+ background-color: var(--Light-grayish-blue);
+ margin: 20px 0px;
+}
+}
