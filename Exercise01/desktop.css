@@ -31,11 +31,15 @@
 --Kumbh:'Kumbh Sans', sans-serif;
 }
 
+html, body {
+    height: 100%;
+  }  
+
 body {
     padding: 150px 0px;
     background-image: var(--Gradient);
     background-repeat: no-repeat;
-    
+    background-size: cover;
 }
 
 main {
@@ -81,12 +85,7 @@ main {
     width: 200px;
     position: absolute;
     transform: translate(-49%, 95%);
-    /*transition: transform 0.5s ease-out;*/
 }
-
-/*.illustration-box-desktop:hover {
-    transform: translate(-68%, 95%);
-}*/
 
 .container_02 {
     padding: 50px;

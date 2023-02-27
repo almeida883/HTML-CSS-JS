@@ -31,6 +31,10 @@
 --Kumbh:'Kumbh Sans', sans-serif;
 }
 
+html, body {
+    height: 100%;
+  }  
+
 body {
     padding: 50px 0px;
     background-image: var(--Gradient);
