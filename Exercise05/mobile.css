@@ -1,0 +1,183 @@
+@charset "UTF-8";
+
+@media (max-width: 991px) {  
+
+
+:root {
+
+    /* ### Primary */
+
+    --Red: hsl(0, 100%, 74%);
+    --Green: hsl(154, 59%, 51%);
+    --Green-button: hsl(154, 56%, 41%);
+    
+    /* ### Accent */
+    
+    --Blue: hsl(248, 32%, 49%);
+    
+    /* ### Neutral */
+    
+    --Dark-Blue: hsl(249, 10%, 26%);
+    --Grayish-Blue: hsl(246, 25%, 77%);
+    --Dark-Blue-form: hsla(249, 10%, 26%, 0.116);
+    
+    /* Font */
+    --Poppins:'Poppins', sans-serif;
+}
+
+body {
+    background-image: url(images/bg-intro-mobile.png);
+    background-color: var(--Red);
+    color: white;
+    font-family: var(--Poppins);
+    text-align: center;
+    padding: 50px 0px;
+}
+
+.text_container_01 {
+    font-size: 16px;
+}
+
+.container_02 {
+    margin: auto;
+}
+
+.button_01 {
+    border: none;
+    width: 333px;
+    height: 70px;
+    background-color: var(--Blue);
+    border-radius: 10px;
+    margin: 30px 0px 20px 0px;
+    box-shadow: 0px 8px 1px hsla(249, 10%, 26%, 0.288);
+}
+
+.text_button_01 { 
+    width: 150px;
+    margin: auto;
+    color: white;
+    font-family: var(--Poppins);
+}
+
+.container_form {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 1px 8px 1px hsla(249, 10%, 26%, 0.288);
+    width: 330px;
+    margin: auto;
+}
+
+
+/* Form */
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="password"] {
+    padding-right: 30px;
+    position: relative;
+  }
+  
+  input[type="text"]::after,
+  input[type="email"]::after,
+  input[type="password"]::after {
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 20px;
+    width: 20px;
+    display: none;
+  }
+  
+  .errorMsg {
+    display: none;
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+  }
+  
+  .errorMsg_text {
+    margin-left: 120px;
+  }
+
+  .errorMsg_img {
+    position: relative;
+    z-index: 1;
+    transform: translate(480%,-260%);
+  }
+
+  input:invalid::after {
+    display: block;
+  }
+  
+  input:invalid + span.errorMsg {
+    display: block;
+  }
+  
+
+
+  #firstName {
+    width: 260px;
+    height: 40px;
+    margin: 20px 0px 0px 0px;
+    border-radius: 5px;
+    border-color: var(--Dark-Blue-form);
+    border-width: 1px;
+    text-indent: 10px;
+  }
+
+  #lastName, #email, #password {
+    width: 260px;
+    height: 40px;
+    margin-top: -40px;
+    border-radius: 5px;
+    border-color: var(--Dark-Blue-form);
+    border-width: 1px;
+    text-indent: 10px;
+  }
+
+  #firstName,#lastName, #email, #password::placeholder {
+    font-family: var(--Poppins);
+    font-weight: 700;
+  }
+
+  #submitBtn { 
+    width: 295px;
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    margin-top: -40px;
+    color: white;
+    font-family: var(--Poppins);
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-size: 15px;
+    background-color: var(--Green);
+    text-transform: uppercase;
+    box-shadow: 0px 3px 1px var(--Green-button);
+  }
+
+  .terms {
+    padding: 20px 0px 30px 0px;
+    width: 220px;
+    margin: auto;
+    color: var(--Grayish-Blue);
+    font-size: 10px;
+  }
+
+  .terms span {
+    color: var(--Red);
+    font-weight: 700;
+  }
+
+  .placeholder-red::placeholder {
+    font-weight: 300;
+    color: red;
+  }
+}
