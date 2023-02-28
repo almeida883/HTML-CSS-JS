@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+<!--Css Files-->
+
+<link rel="stylesheet" href="mobile.css"> 
+<link rel="stylesheet" href="desktop.css">
+
+<!--JQuery-->
+
+<script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+
+<!--Font-->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <title>Frontend Mentor | Base Apparel coming soon page</title>
+
+</head>
+<body>
+  <img src="images/logo.svg" alt="logo" class="logo_mobile">
+
+  <div class="container_01">
+    <img src="images/hero-mobile.jpg" alt="hero-mobile" class="hero-mobile">
+    <img src="images/hero-desktop.jpg" alt="hero-desktop" class="hero-desktop">
+  </div>
+
+  <div class="container_02">
+    <img src="images/logo.svg" alt="logo" class="logo">
+    <div class="box_tittle">
+      <div class="tx1">WE'RE</div>
+      <div class="tx2">COMING</div>
+      <div class="tx3">SOON</div>
+    </div>
+    <div class="text">
+      Hello fellow shoppers! We're currently building our new fashion store.
+      Add your email below to stay up-to-date with announcements and our launch deals.
+      Email Address
+    </div>
+    <form action="enviar-email.php" method="POST">
+      <input type="email" id="remetente" name="remetente" required placeholder="Email Address">
+      <button type="submit"><img src="images/icon-arrow.svg" alt="icon-arrow" class="icon-arrow"></button>
+    </form>
+    <div class="invalid02">
+      <div class="box_icon_error"><img src="images/icon-error.svg" alt="icon-error" class="icon-error"></div>
+      <div class="text_error">Please provide a valida email</div>
+    </div>
+  </div>
+  
+
+  
+<!--Js File-->
+<script type="text/javascript" src="index.js"></script>
+
+</body>
+</html>

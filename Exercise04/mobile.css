@@ -1,0 +1,150 @@
+@charset "UTF-8";
+
+@media (max-width: 991px) {  
+
+
+:root {
+
+
+   /* ### Primary */
+
+    --Desaturated-Red: hsl(0, 36%, 70%);
+    --Soft-Red: hsl(0, 93%, 68%);
+    
+   /* ### Neutral */
+    
+   --Dark-Grayish-Red: hsl(0, 6%, 24%);
+   --Dark-Grayish-Red-opacity: hsla(0, 6%, 24%, 0.178);
+    
+   /* ### Gradients */
+   --gradiente1: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+   --gradiente2: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    
+    --Josefin:'Josefin Sans', sans-serif;
+}
+
+
+body {
+    background-image: var(--gradiente1);
+    background-size: cover;
+    margin: 0px;
+    font-family: var(--Josefin);
+}
+
+.logo_mobile {
+    width: 120px;
+    padding: 30px;
+}
+
+.container_01 {
+
+}
+
+.hero-mobile {
+    width: 375px;
+    display: block;
+    margin: auto;
+}
+
+.hero-desktop {
+    display: none;
+}
+
+.container_02 {
+    text-align: center;    
+}
+
+.logo {
+    display: none;
+}
+
+.box_tittle {
+    margin-top: 40px;
+    font-size: 40px;
+}
+
+.tx1 {
+    font-weight: 300;
+    color: var(--Desaturated-Red);
+    letter-spacing: 12px;
+}
+
+
+.tx2 {
+    color: var(--Dark-Grayish-Red);
+    letter-spacing: 8px;
+}
+
+
+.tx3 {
+    color: var(--Dark-Grayish-Red);
+    letter-spacing: 8px;
+}
+
+.text {
+    color: var(--Desaturated-Red);
+    font-weight: 400;
+    font-size: 15px;
+    width: 300px;
+    margin: 20px auto;
+    line-height: 20px;
+}
+
+form {
+    margin-bottom: 50px;
+}
+
+input {
+    width: 250px;
+    height: 40px;
+    border-radius: 30px;
+    border-width: 0.1px;
+    border-color: var(--Dark-Grayish-Red-opacity);
+    border-style: solid;
+    text-indent: 20px;
+    background-color: transparent;
+}
+
+input::placeholder {
+    font-family: var(--Josefin);
+    color: var(--Dark-Grayish-Red-opacity);
+}
+
+button {
+    position: absolute;
+    height: 44px;
+    width: 60px;
+    transform: translate(-100%,0%);
+    border: none;
+    border-radius: 30px;
+    background-image: var(--gradiente2);
+    box-shadow: 5px 10px 40px var(--Desaturated-Red);
+}
+
+.invalid {
+    border-color: red;
+}
+
+.invalid02 {
+    display: none;
+}
+
+.icon-error {
+    transform: translate(250%,-410%);
+    width: 20px;
+}
+
+.text_error {
+    color: red;
+    transform: translate(-10%,-600%);
+    font-size: 10px;
+}
+
+.hidden {
+    display: none;
+  }
+
+  
+
+}
+
