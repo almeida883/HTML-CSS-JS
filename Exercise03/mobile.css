@@ -1,0 +1,155 @@
+@charset "UTF-8";
+
+@media (max-width: 991px) {  
+
+
+:root {
+
+    /*## Colors*/
+
+    --Very-Dark-Grayish-Blue: hsl(217, 19%, 35%);
+    --Desaturated-Dark-Blue: hsl(214, 17%, 51%);
+    --Grayish-Blue: hsl(212, 23%, 69%);
+    --Light-Grayish-Blue: hsl(210, 46%, 95%);
+    
+    --Manrope:'Manrope', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    height: 100vh;
+    background-color: var(--Light-Grayish-Blue);
+    font-size: 13px;
+    font-family: var(--Manrope);
+}
+
+.container {
+    height: 450px;
+    width: 300px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.drawers {
+    width: 300px;
+    height: 200px;
+    border-radius: 10px 10px 0px 0px;
+    position: absolute;
+    clip: rect(0px, 400px, 165px, 0px);
+}
+
+.box_02 {
+    margin-top: 160px;
+    padding: 20px;
+}
+
+.tittle {
+    color: var(--Very-Dark-Grayish-Blue);
+    font-size: 15px;
+    line-height: 23px;
+}
+
+.text {
+    color: var(--Desaturated-Dark-Blue);
+    line-height: 22px;
+}
+
+.box_inside {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.avatar-michelle {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    margin-left: -20px;
+}
+
+.box_info {
+    margin-left: -20px;
+}
+
+.name {
+   
+    color: var(--Very-Dark-Grayish-Blue);
+    font-weight: 700;
+}
+
+.date {
+    color: var(--Grayish-Blue);
+}
+
+.box_icon_share_01 {
+    width: 30px;
+    height: 30px;
+    background-color: var(--Light-Grayish-Blue);
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: -18px;
+    margin-top: 10px;
+}
+
+.icon-share_01 {
+    width: 15px;
+    height: 15px;
+}
+
+/* sharing_box_phone */
+
+.sharing_box_phone {
+    position: absolute;
+    background-color: var(--Very-Dark-Grayish-Blue);
+    transform: translate(0%,270%);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 300px;
+    height: 70px;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.text_share {
+    color: var(--Grayish-Blue);
+    font-size: 14px;
+    letter-spacing: 7px;
+}
+
+.box_socialmedia {
+    margin-left: -40px;
+    width: 100px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.box_icon_share_02 {
+    width: 30px;
+    height: 30px;
+    background-color: var(--Desaturated-Dark-Blue);
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-share_02 {
+    width: 15px;
+    height: 15px;
+    filter: brightness(10000%);
+}
+
+.triangle {
+    display: none;
+}
+
+.hidden {
+    display: none;
+}
+
+}
