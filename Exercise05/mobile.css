@@ -119,8 +119,6 @@ form {
   input:invalid + span.errorMsg {
     display: block;
   }
-  
-
 
   #firstName {
     width: 260px;
