@@ -1,0 +1,48 @@
+
+
+
+.navbar-collapse.slideInRight {
+    animation: slideInRight 0.5s forwards;
+  }
+
+  .navbar-collapse.slideOutRight {
+    animation: slideOutRight 0.5s forwards;
+  }
+
+  @keyframes slideInRight {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
+  }
+
+  @keyframes slideOutRight {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(100%);
+    }
+  }
+  
+  @media (max-width: 991px) {
+    .navbar-collapse {
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      width: 70%;
+      max-width: 300px;
+      z-index: 9999;
+      display: none;
+      padding: 1rem;
+      overflow-y: auto;
+      background-color: #f8f9fa;
+    }
+    
+    .navbar-collapse.show {
+      display: block;
+    }
+  }
