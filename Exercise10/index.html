@@ -23,40 +23,40 @@
    
  <!-- Font -->
 
-
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
 
   <title>Frontend Mentor | Expenses chart component</title>
-
 
 </head>
 <body>
 
-  <div id="bar-chart">
-    <div class="chart-title">Bar Chart</div>
+  <header>
+    <div class="info_box">
+      <div class="text">My balance</div>
+      <div class="balance">$921.48</div>
+    </div>
+    <div class="logo_box">
+      <img src="images/logo.svg" alt="logo" class="logo">
+    </div>
+  </header>
+
+  <main id="bar_chart">
+    <div class="chart-title">Spending - Last 7 days</div>
     <ul class="chart-bars"></ul>
-  </div>
-  
-  
-  
-
-  My balance
-  $921.48
-
-  Spending - Last 7 days
-
-  mon
-  tue
-  wed
-  thu
-  fri
-  sat
-  sun
-
-  Total this month
-  $478.33
-
-  +2.4%
-  from last month
+    <div class="line"></div>
+    <div class="main_footer">
+      <div class="footer_box01">
+        <div class="text">Total this month</div>
+        <div class="price">$478.33</div>
+      </div>
+      <div class="footer_box02">
+        <div class="percentage">+2.4%</div>
+        <div class="text">from last month</div>
+      </div>
+    </div>
+  </main>
   
 <!-- Js File -->
 <script type="text/javascript" src="index.js"></script>

@@ -20,6 +20,9 @@ $(document).ready(function() {
       var amount = $(this).data('amount');
       var height = (amount / max) * 100 + '%';
       $(this).css('height', height);
+      if (amount == max) {
+        $(this).addClass('highest');
+      }
     });
   });
 
