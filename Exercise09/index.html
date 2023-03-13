@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+  <!-- Favicon -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+<!-- JQuery -->
+ 
+<script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+
+<!-- Bootstrap -->
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+<!-- Css Files -->
+<link rel="stylesheet" href="mobile.css"> 
+<link rel="stylesheet" href="desktop.css">
+   
+ <!-- Font -->
+
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap" rel="stylesheet">
+
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+ 
+</head>
+<body>
+
+  <div class="overlay"></div>
+  <!-- Navbar -->
+
+  <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <a class="navbar-brand" href="#">
+        <img src="images/logo.svg" alt="logo" class="logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="">
+          <img src="images/icon-menu.svg" alt="icon-menu" class="icon-menu">
+        </span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end desktop-menu" id="navbarNav"> 
+        <div class="icon-menu-close-box"><img src="images/icon-close-menu.svg" alt="icon-close-menu" class="icon-close-menu"></div>
+        <ul class="navbar-nav">
+  <li class="nav-item">
+    <a class="drop nav-link" data-slide-id="slide0" id="colorteste" >Features <img src="images/icon-arrow-down.svg" alt="icon-arrow-down" class="icon-arrow-down"></a>
+    <div id="slide0" class="slide">
+      <a class="dropdown-item nav-link-code-js" href="#"><img src="images/icon-todo.svg" alt="icon-todo" class="icon-todo">Todo List</a>
+      <a class="dropdown-item nav-link-code-js" href="#"><img src="images/icon-calendar.svg" alt="icon-calendar" class="icon-calendar">Calendar</a>
+      <a class="dropdown-item nav-link-code-js" href="#"><img src="images/icon-reminders.svg" alt="icon-reminders" class="icon-reminders">Reminders</a>
+      <a class="dropdown-item nav-link-code-js" href="#"><img src="images/icon-planning.svg" alt="icon-planning" class="icon-planning">Planning</a>
+    </div>
+  </li>
+  <li class="nav-item">
+    <a class="drop nav-link" data-slide-id="slide1" >Company <img src="images/icon-arrow-down.svg" alt="icon-arrow-down" class="icon-arrow-down"></a>
+    <div id="slide1" class="slide">
+      <a class="dropdown-item nav-link-code-js" href="#">History</a>
+      <a class="dropdown-item nav-link-code-js" href="#">Our Team</a>
+      <a class="dropdown-item nav-link-code-js" href="#">Blog</a>
+    </div>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link nav-link-code-js nav-link-careers" href="#">Careers</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link nav-link-code-js nav-link-about" href="#">About</a>
+  </li>
+</ul>
+<!-- Buttons Mobile -->
+<div id="desktop-none">
+  <a class="nav-link login" href="#">Login</a>
+  <a class="nav-link register" href="#">Register</a>
+</div>
+<!-- Buttons Desktop -->
+<div class="collapse navbar-collapse justify-content-end" id="mobile-none">
+  <a class="nav-link login" href="#">Login</a>
+  <a class="nav-link register" href="#">Register</a>
+</div>
+</div>
+</nav>
+</div>
+
+
+
+<!-- Images -->
+
+  <main>
+    <div class="">
+      <img src="images/image-hero-mobile.png" alt="image-hero-mobile" class="image-hero-mobile">
+      <img src="images/image-hero-desktop.png" alt="image-hero-desktop" class="image-hero-desktop">
+    </div>
+
+    <!-- Content -->
+
+    <div class="content-box">
+      <div class="h1">Make remote work</div>
+      <div class="text">Get your team in sync, no matter your location. Streamline processes, 
+        create team rituals, and watch productivity soar.</div>
+      <button>Learn more</button>
+      <div class="footer">
+        <img src="images/client-databiz.svg" alt="client-databiz" class="client-databiz logo-footer">
+        <img src="images/client-audiophile.svg" alt="client-audiophile" class="client-audiophile logo-footer">
+        <img src="images/client-meet.svg" alt="client-meet" class="client-meet logo-footer">
+        <img src="images/client-maker.svg" alt="client-maker" class="client-maker logo-footer">
+      </div>
+    </div>
+  </main>
+  
+<!-- Js File -->
+<script type="text/javascript" src="index.js"></script>
+</body>
+</html>

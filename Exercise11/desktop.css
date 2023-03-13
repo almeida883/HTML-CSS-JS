@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+@media (min-width: 992px) {  
+
+          
+    .navbar {
+        margin-bottom: 40px;
+    }
+    
+    .logo {
+        width: 50px;
+    }
+    
+    .navbar-toggler {
+        border: none;
+        padding: 0;
+    }
+    
+    .icon-menu-close-box {
+        display: none;
+    }
+
+    #desktop-none {
+        display: none;
+    }
+
+    /* Images */
+
+    .image-hero-mobile {
+        display: none;
+    }
+
+    /* Content */
+
+}
+

@@ -1,0 +1,158 @@
+@charset "UTF-8";
+
+@media (max-width: 991px) {  
+
+:root {
+      
+/* ### Neutral */
+       
+
+--Almost-White: hsl(0, 0%, 98%);
+--Medium-Gray: hsl(0, 0%, 41%);
+--Almost-Black: hsl(0, 0%, 8%);
+       
+--Epilogue:'Epilogue', sans-serif;
+       
+}
+       
+body {
+    font-size: 18px;
+    font-family: var(--Epilogue);
+}
+
+/* navbar */
+
+
+.navbar-collapse.slideInRight {
+    animation: slideInRight 0.5s forwards;
+  }
+
+  .navbar-collapse.slideOutRight {
+    animation: slideOutRight 0.5s forwards;
+  }
+
+  @keyframes slideInRight {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
+  }
+
+  @keyframes slideOutRight {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(100%);
+    }
+  }
+  
+  @media (max-width: 991px) {
+    .navbar-collapse {
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      width: 70%;
+      max-width: 300px;
+      z-index: 9999;
+      display: none;
+      padding: 1rem;
+      overflow-y: auto;
+      background-color: #f8f9fa;
+    }
+    
+    .navbar-collapse.show {
+      display: block;
+    }
+  }
+
+.navbar {
+    margin-bottom: 20px;
+}
+
+.logo {
+    width: 80px;
+}
+
+.navbar-toggler {
+    border: none;
+    padding: 0;
+}
+
+.icon-menu-close-box {
+    width: 100%;
+    display: flex;
+    justify-content: right;
+}
+/* Changes navbar */
+
+#mobile-none {
+    display: none;
+}
+
+.navbar-toggler {
+    box-shadow: none !important;
+    transition: none !important;
+}
+  
+.icon-menu {
+    margin-left: 100px;
+}
+
+
+/* */
+
+main {
+    text-align: center;
+}
+
+/* Images */
+
+.image-hero-desktop {
+    display: none;
+}
+
+.image-hero-mobile {
+    width: 100%;
+}
+
+/* Content */
+
+.h1 {
+    margin-top: 30px;
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.text {
+    font-size: 17px;
+    color: var(--Medium-Gray);
+    font-weight: 500;
+    padding: 0px 20px;
+    margin: 30px 0px;
+}
+
+button {
+    border: none;
+    width: 160px;
+    height: 55px;
+    background-color: var(--Almost-Black);
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 15px;
+}
+
+.logo-footer {
+    width: 70px;
+    margin: 10px;
+    margin-top: 40px;
+}
+
+
+
+}
+

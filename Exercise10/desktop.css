@@ -1,0 +1,68 @@
+@charset "UTF-8";
+
+@media (min-width: 992px) {  
+
+   
+
+}
+
+#bar-chart {
+    width: 600px;
+    margin: 50px auto;
+  }
+  
+  .chart-title {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .chart-bars {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 300px;
+    border: 1px solid #ccc;
+    position: relative;
+  }
+  
+  .chart-bars li {
+    background-color: #008080;
+    flex-grow: 1;
+    margin-right: 10px;
+    position: relative;
+    transition: height 0.3s;
+  }
+  
+  .chart-bars li:hover {
+    height: 80%;
+  }
+  
+  .chart-bars .bar-label {
+    font-size: 14px;
+    text-align: center;
+    margin-top: 5px;
+    position: absolute;
+    bottom: -20px;
+    width: 100%;
+    white-space: nowrap;
+  }
+
+  .bar:hover::after {
+    content: attr(data-amount);
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 14px;
+    font-weight: bold;
+    background-color: #333;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+  

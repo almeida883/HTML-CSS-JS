@@ -1,0 +1,180 @@
+@charset "UTF-8";
+
+@media (min-width: 992px) {  
+
+    :root {
+      
+        /* ### Neutral */
+               
+        
+        --Almost-White: hsl(0, 0%, 98%);
+        --Medium-Gray: hsl(0, 0%, 41%);
+        --Almost-Black: hsl(0, 0%, 8%);
+               
+        --Epilogue:'Epilogue', sans-serif;
+               
+        }
+               
+        body {
+            font-size: 18px;
+            font-family: var(--Epilogue);
+        }
+
+        /* navbar */
+          
+    .navbar {
+        margin: 20px 0px 40px 0px;
+    }
+    
+    .logo {
+        width: 100px;
+        padding: 8px;
+    }
+    
+    .navbar-toggler {
+        border: none;
+        padding: 0;
+    }
+    
+    .icon-menu-close-box {
+        display: none;
+    }
+
+    #desktop-none {
+        display: none;
+    }
+
+    /* Changes navbar */
+
+    #slide0 {
+        position: absolute;
+        transform: translate(-35%,5%);
+        background-color: white;
+        border-radius: 10px;   
+        box-shadow: 0px 0px 20px #00000046;
+        padding: 20px 25px;
+    }
+
+    #slide1 {
+        position: absolute;
+        transform: translate(5%,5%);
+        background-color: white;
+        border-radius: 10px;   
+        box-shadow: 0px 0px 20px #00000046;
+        padding: 20px 25px;
+    }
+
+    .dropdown-item img {
+        margin-right: 10px;
+        width: 20px;
+    }
+
+    .slide a{
+        margin: 10px 0px;
+    }
+
+    .nav-item {
+        margin-right: 30px;
+    }
+
+    #mobile-none .register {
+        margin-left: 30px;
+        border-radius: 15px;
+        border-color: var(--Medium-Gray);
+        border-style: solid;
+        border-width: 1px;
+        height: 40px;
+        width: 120px;
+        padding-top: 6px;
+        padding-left: 22px;
+    }
+
+    .nav-link-features:hover, .nav-link-company:hover, .nav-link-about:hover, .login:hover, .register:hover, .drop:hover {
+        color: var(--Almost-Black);
+        cursor: pointer;
+    }
+
+    .nav-link-careers:hover{
+        color: var(--Medium-Gray);
+        cursor: default;
+    }
+
+    .nav-link-code-js {
+        color: var(--Medium-Gray);
+      }
+
+    /* Images */
+
+    .image-hero-mobile {
+        display: none;
+    }
+
+    /* Content */
+
+    /* */
+
+main {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 100px;
+}
+
+/* Images */
+
+.image-hero-desktop {
+    width: 80%;
+    display: block;
+    margin: auto;
+}
+
+.image-hero-mobile {
+    display: none;
+}
+
+/* Content */
+
+.h1 {
+    font-size: 80px;
+    font-weight: 700;
+    color: var(--Almost-Black);
+    margin-top: 70px;
+}
+
+.text {
+    font-size: 19px;
+    color: var(--Medium-Gray);
+    font-weight: 500;
+    margin: 40px 0px;
+    width: 70%;
+}
+
+button {
+    border: none;
+    width: 160px;
+    height: 55px;
+    background-color: var(--Almost-Black);
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 15px;
+}
+
+button:hover {
+    color: var(--Almost-Black);
+    background-color: var(--Almost-White);
+    border: 1px solid var(--Almost-Black);
+}
+
+.footer {
+    margin-top: 110px;
+}
+
+.logo-footer {
+    width: 90px;
+    margin-right: 50px;
+}
+
+}
+
