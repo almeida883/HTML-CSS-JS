@@ -22,82 +22,57 @@
    
  <!-- Font -->  
 
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+
   <title>Frontend Mentor | Tip calculator app</title>
 
   
 </head>
 <body>
-  <div class="container">
-    <h1>Tip Calculator</h1>
-    <form>
-        <div class="form-group">
-            <label for="bill">Bill:</label>
-            <input type="number" class="form-control" id="bill" placeholder="Enter bill amount">
+    <img src="images/logo.svg" alt="logo" class="logo">
+
+    <div class="container">
+        <div class="row calculator">
+            <form>
+                <div class="form-group">
+                    <label for="bill">Bill</label>
+                    <input type="number" class="form-control" id="bill" placeholder="0" style="direction: rtl;">
+                </div>
+                <div class="form-group">
+                    <label class="text_tip">Select tip %</label>
+                        <div class="box_tip_02 ">
+                            <button type="button" id="5">5%</button>
+                            <button type="button" id="10">10%</button>
+                            <button type="button" id="15">15%</button>
+                            <button type="button" id="25">25%</button>
+                            <button type="button" id="50">50%</button>
+                            <input id="custom" class="form-control" type="number" placeholder="Custom" style="direction: rtl;">
+                        </div>
+                </div>
+                <div class="form-group">
+                    <div class="error_msg">Can´t be zero</div>
+                    <label for="people">Number of people</label>
+                    <input type="number" class="form-control" id="people" placeholder="0" style="direction: rtl;">
+                </div>
+            </form>
         </div>
-        <div class="form-group">
-            <label for="tip">Select tip %:</label>
-            <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                <label class="btn btn-secondary active">
-                    <input type="radio" name="tip" id="tip5" value="0.05" autocomplete="off" checked> 5%
-                </label>
-                <label class="btn btn-secondary">
-                    <input type="radio" name="tip" id="tip10" value="0.10" autocomplete="off"> 10%
-                </label>
-                <label class="btn btn-secondary">
-                    <input type="radio" name="tip" id="tip15" value="0.15" autocomplete="off"> 15%
-                </label>
-                <label class="btn btn-secondary">
-                    <input type="radio" name="tip" id="tip25" value="0.25" autocomplete="off"> 25%
-                </label>
-                <label class="btn btn-secondary">
-                    <input type="radio" name="tip" id="tip50" value="0.50" autocomplete="off"> 50%
-                </label>
-                <label class="btn btn-secondary">
-                    <input type="radio" name="tip" id="tipCustom" value="custom" autocomplete="off"> Custom
-                </label>
+
+        <div class="row result">
+            <div class="col box_result">
+                <h4>Tip Amount <div>/ person</div></h4>
+                <p id="tipAmount">$0.00</p>
             </div>
-            <input type="number" class="form-control mt-2" id="customTip" placeholder="Enter custom tip %">
-        </div>
-        <div class="form-group">
-            <label for="people">Number of people:</label>
-            <input type="number" class="form-control" id="people" placeholder="Enter number of people">
-        </div>
-        <button type="reset" class="btn btn-danger ml-2">Reset</button>
-    </form>
-    <hr>
-    <div class="row">
-        <div class="col">
-            <h4>Tip Amount / Person</h4>
-            <p id="tipAmount"></p>
-        </div>
-        <div class="col">
-            <h4>Total / Person</h4>
-            <p id="totalAmount"></p>
+            <div class="col box_result box_result_02">
+                <h4>Total <div>/ person</div></h4>
+                <p id="totalAmount">$0.00</p>
+            </div>
+            <form>
+                <button id="button_reset" type="reset" class="button_empty">RESET</button>
+            </form>
         </div>
     </div>
-</div>
-  
-
-
-  Bill
-
-  Select Tip %
-  5%
-  10%
-  15%
-  25%
-  50%
-  Custom
-
-  Number of People
-
-  Tip Amount
-  / person
-
-  Total
-  / person
-
-  Reset
   
 <!-- Js File -->
 <script type="text/javascript" src="index.js"></script>
