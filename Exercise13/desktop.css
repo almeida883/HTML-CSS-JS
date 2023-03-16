@@ -1,0 +1,181 @@
+@charset "UTF-8";
+
+@media (min-width: 992px) {  
+
+
+
+  :root {
+      
+    /*### Primary*/
+  
+    --Blue: hsl(246, 80%, 60%);
+    --Light_orange: hsl(15, 100%, 70%);
+    --Soft_blue: hsl(195, 74%, 62%);
+    --Light_red: hsl(348, 100%, 68%);
+    --Lime_green: hsl(145, 58%, 55%);
+    --Violet: hsl(264, 64%, 52%);
+    --Soft_orange: hsl(43, 84%, 65%);
+    
+    /*### Neutral*/
+    
+    --Very_dark_blue: hsl(226, 43%, 10%);
+    --Dark_blue: hsl(235, 46%, 20%);
+    --Desaturated_blue: hsl(235, 45%, 61%);
+    --Pale_Blue: hsl(236, 100%, 87%);
+         
+    --Rubik:'Rubik', sans-serif;
+  
+  }
+  
+  body {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  
+    background-color: var(--Very_dark_blue);
+    color: var(--Pale_Blue);
+    font-size: 18px;
+  }
+  
+  .grid-item {
+    margin: 10px;
+  }
+  
+  .header {
+    width: 300px;
+    height: 120px;
+
+    margin-right: 1000px;
+  }
+  
+  .header_box_01 {
+    padding: 50px;
+    background-color: var(--Blue);
+    border-radius: 20px;
+    height: 400px;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .text_header_box_01 {
+    font-size: 15px;
+    margin-top: 20px;
+  }
+  
+  .name_header_box_01 {
+    font-weight: 400;
+    font-size: 42px;
+    color: white;
+  }
+  
+  .image-jeremy {
+    border: 3px solid white;
+    border-radius: 100%;
+  
+    width: 90px;
+    height: 90px;
+  }
+  
+  .header_box_02 {
+    padding: 50px;
+    border-radius: 0px 0px 20px 20px;
+    margin-top: -15px;
+    padding-top: 15px;
+    height: 200px;
+    position: relative;
+    color: var(--Desaturated_blue);
+  }
+  
+  .header .header_box_02{
+    background-color: var(--Dark_blue);
+  }
+
+  #daily, #weekly, #monthly {
+    margin: 25px 0px;
+  }
+  
+  .change_color {
+    color: var(--Pale_Blue);
+    font-weight: 500;
+  }
+  
+  .box_dashboard {
+    width: 300px;
+    height: 277px;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .box_dashboard_01 {
+    background-color: var(--Light_orange);
+    margin-bottom: 30px;
+  }
+  
+  .box_dashboard_02 {
+    background-color: var(--Lime_green);
+  }
+  
+  .box_dashboard_03 {
+    background-color: var(--Soft_blue);
+    margin-bottom: 30px;
+  }
+  
+  .box_dashboard_04 {
+    background-color: var(--Violet);
+  }
+  
+  .box_dashboard_05 {
+    background-color: var(--Light_red);
+    margin-bottom: 30px;
+  }
+  
+  .box_dashboard_06 {
+    background-color: var(--Soft_orange);
+  }
+  
+  .box_dashboard img {
+    position: absolute;
+    top: 12%;
+    left: 85%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .dashboard_info {
+    background-color: var(--Dark_blue);
+    margin-top: 40px;
+    position: relative;
+    border-radius: 20px;
+    padding: 20px;
+    height: 100%;
+  }
+  
+  .dashboard_info_name {
+    font-weight: 500;
+    color: white;
+  }
+  
+  #work-daily, #work-weekly, #work-monthly, 
+  #exercise-daily, #exercise-weekly, #exercise-monthly, 
+  #play-daily, #play-weekly, #play-monthly, 
+  #social-daily, #social-weekly, #social-monthly, 
+  #study-daily, #study-weekly, #study-monthly, 
+  #self_care-daily, #self_care-weekly, #self_care-monthly {
+    font-size: 70px;
+    color: white;
+  }
+  
+  .daily_info, .weekly_info, .monthly_info {
+    padding-top: 20px;
+  }
+
+  .pre-wrapper {
+    float: left;
+    margin-top: 10px;
+  }
+  
+}
+  
+  
+  

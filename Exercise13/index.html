@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+<!-- Favicon -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+<!-- JQuery -->
+ 
+<script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+
+<!-- Bootstrap -->
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+<!-- Css Files -->
+<link rel="stylesheet" href="mobile.css"> 
+<link rel="stylesheet" href="desktop.css">
+   
+ <!-- Font -->  
+
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <title>Frontend Mentor | Time tracking dashboard</title>
+
+
+</head>
+<body>
+  
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3">
+        <div class="grid-item header"> 
+          <div class="header_box_01">
+            <img src="images/image-jeremy.png" alt="image-jeremy" class="image-jeremy">
+            <div class="">
+              <div class="text_header_box_01">Report for</div>
+              <div class="name_header_box_01">Jeremy Robson</div>
+            </div>
+          </div>
+          <div class="header_box_02">
+            <div id="daily" class="">Daily</div>
+            <div id="weekly" class="">Weekly</div>
+            <div id="monthly" class="">Monthly</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-3">
+        <div class="grid-item box_dashboard box_dashboard_01">
+          <img src="images/icon-work.svg" alt="icon-work" class="icon-work">
+          <div class="dashboard_info"> <!---->
+            <div class="dashboard_info_name"> <!---->
+              Work 
+              <span>
+               <img src="images/icon-ellipsis.svg" alt="icon-ellipsis" class="icon-ellipsis">
+              </span>
+            </div>
+            <div class="daily_info">
+              <span id="work-daily"></span>
+              <span class="pre-wrapper"> <!---->
+                Last Week -
+                <span id="work-daily-pre"></span>
+              </span>
+            </div>
+            <div class="weekly_info">
+              <span id="work-weekly"></span>
+              <span class="pre-wrapper"> 
+                Last Week -
+                <span id="work-weekly-pre"></span>
+              </span>
+            </div>
+            <div class="monthly_info">
+              <span id="work-monthly"></span>
+              <span class="pre-wrapper"> 
+                Last Week -
+                <span id="work-monthly-pre"></span>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="grid-item box_dashboard box_dashboard_02">
+          <img src="images/icon-exercise.svg" alt="icon-exercise" class="icon-exercise">
+          <div class="dashboard_info">
+            <div class="dashboard_info_name">Exercise<span><img src="images/icon-ellipsis.svg" alt="icon-ellipsis" class="icon-ellipsis"></span></div>
+            <div class="daily_info">
+              <span id="exercise-daily"></span>
+              <span class="pre-wrapper"> 
+                Last Week -
+                <span id="exercise-daily-pre"></span>
+              </span>
+            </div>
+            <div class="weekly_info">
+              <span id="exercise-weekly"></span>
+              <span class="pre-wrapper"> 
+                Last Week -
+                <span id="exercise-weekly-pre"></span>
+              </span>
+            </div>
+            <div class="monthly_info">
+              <span id="exercise-monthly"></span>
+              <span class="pre-wrapper"> 
+                Last Week -
+                <span id="exercise-monthly-pre"></span>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-3">
+        <div class="grid-item box_dashboard box_dashboard_03">
+          <img src="images/icon-play.svg" alt="icon-play" class="icon-play">
+          <div class="dashboard_info">
+            <div class="dashboard_info_name">Play<span><img src="images/icon-ellipsis.svg" alt="icon-ellipsis" class="icon-ellipsis"></span></div>
+            <div class="daily_info">
+              <span id="play-daily"></span>
+              <span class="pre-wrapper"> 
+                Last Week -
+                <span id="play-daily-pre"></span>
+              </span>
+            </div>
+            <div class="weekly_info">
+              <span id="play-weekly"></span>
+              <span class="pre-wrapper"> 
+                Last Week -
+                <span id="play-weekly-pre"></span>
+              </span>
+            </div>
+            <div class="monthly_info">
+              <span id="play-monthly"></span>
+              <span class="pre-wrapper"> 
+                Last Week -
+                <span id="play-monthly-pre"></span>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="grid-item box_dashboard box_dashboard_04">
+          <img src="images/icon-social.svg" alt="icon-social" class="icon-social">
+          <div class="dashboard_info">
+            <div class="dashboard_info_name">Social<span><img src="images/icon-ellipsis.svg" alt="icon-ellipsis" class="icon-ellipsis"></span></div>
+            <div class="daily_info">
+              <span id="social-daily"></span>
+              <span class="pre-wrapper"> 
+                Last Week -
+                <span id="social-daily-pre"></span>
+              </span>
+            </div>
+            <div class="weekly_info">
+              <span id="social-weekly"></span>
+              <span class="pre-wrapper"> 
+                Last Week -
+                <span id="social-weekly-pre"></span>
+              </span>
+            </div>
+            <div class="monthly_info">
+              <span id="social-monthly"></span>
+              <span class="pre-wrapper"> 
+                Last Week -
+                <span id="social-monthly-pre"></span>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-3">
+        <div class="grid-item box_dashboard box_dashboard_05">
+          <img src="images/icon-study.svg" alt="icon-study" class="icon-study">
+          <div class="dashboard_info">
+            <div class="dashboard_info_name">Study<span><img src="images/icon-ellipsis.svg" alt="icon-ellipsis" class="icon-ellipsis"></span></div>
+            <div class="daily_info">
+              <span id="study-daily"></span>
+              <span class="pre-wrapper"> 
+                Last Week -
+                <span id="study-daily-pre"></span>
+              </span>
+            </div>
+            <div class="weekly_info">
+              <span id="study-weekly"></span>
+              <span class="pre-wrapper"> 
+                Last Week -
+                <span id="study-weekly-pre"></span>
+              </span>
+            </div>
+            <div class="monthly_info">
+              <span id="study-monthly"></span>
+              <span class="pre-wrapper"> 
+                Last Week -
+                <span id="study-monthly-pre"></span>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="grid-item box_dashboard box_dashboard_06">
+          <img src="images/icon-self-care.svg" alt="icon-self-care" class="icon-self-care">
+          <div class="dashboard_info">
+            <div class="dashboard_info_name">Self Care<span><img src="images/icon-ellipsis.svg" alt="icon-ellipsis" class="icon-ellipsis"></span></div>
+            <div class="daily_info">
+              <span id="self_care-daily"></span>
+              <span class="pre-wrapper"> 
+                Last Week -
+                <span id="self_care-daily-pre"></span>
+              </span>
+            </div>
+            <div class="weekly_info">
+              <span id="self_care-weekly"></span>
+              <span class="pre-wrapper"> 
+                Last Week -
+                <span id="self_care-weekly-pre"></span>
+              </span>
+            </div>
+            <div class="monthly_info">
+              <span id="self_care-monthly"></span>
+              <span class="pre-wrapper"> 
+                Last Week -
+                <span id="self_care-monthly-pre"></span>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- Js File -->
+<script type="text/javascript" src="index.js"></script>
+</body>
+</html>
