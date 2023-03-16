@@ -175,6 +175,24 @@
     margin-top: 10px;
   }
   
+  /* Hover's */
+ 
+  .dashboard_info:hover {
+    background-color: var(--Desaturated_blue);
+    cursor: pointer;
+  }
+
+  .icon-ellipsis:hover {
+    cursor: pointer;
+    filter: brightness(1000%);
+  }
+
+  #daily:hover, #weekly:hover, #monthly:hover {
+   cursor: pointer;
+   color: white;
+  }
+
+
 }
   
   
