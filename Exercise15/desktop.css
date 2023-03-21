@@ -46,6 +46,7 @@ body {
 
 .navbar {
   padding: 70px 100px;
+  
 }
 
 ul {
@@ -66,7 +67,7 @@ li a img {
 
 #box_buttons_nav {
   display: flex;
-  margin-left: 500px;
+  padding-left: 80%;
 }
 
 .drop {
@@ -134,6 +135,12 @@ li a img {
   background-color: #ffffff62;
   color: white;
   cursor: pointer;
+}
+
+/**/
+.teste69 {
+  display: flex !important;
+  justify-content: space-between !important;
 }
 
 /* Header */ 
@@ -238,16 +245,18 @@ h2 {
 
 .container_01 {
   display: flex;
+  overflow: hidden;
 }
 
 #ajust_01 {
-  width: 50%;
-  margin-top: 110px;
+  margin-top: 200px;
 }
 
 .illustration-editor-desktop {
-  position: absolute;
-  transform: translate(85%,-10%);
+  transform: translate(30%,0%);
+  width: 70%;
+  height: 100%;
+  margin-left: -120px;
 }
 
 h3 {
@@ -286,7 +295,7 @@ h3 {
   position: relative;
   overflow: hidden;
   margin: auto;
-  margin-top: 300px;
+  margin-top: 200px;
   
 }
 

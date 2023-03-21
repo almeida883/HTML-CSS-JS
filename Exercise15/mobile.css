@@ -62,7 +62,6 @@ body {
   border-radius: 5px;
   padding-top: 20px;
   z-index: 9999;
-  overflow: visible;
 }
 
 .drop {
