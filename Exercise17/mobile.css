@@ -13,23 +13,54 @@
 
 }
 
-
+body {
+  font-family: var(--Inter);
 }
 
+.box_images {
+  margin: auto;
+  width: 375px;
+}
 
+.pattern-bg {
+  display: block;
+  width: 350px;
+  margin: 20px auto;
+}
 
+.pattern-quotes {
+  display: block;
+  width: 70px;
+  margin: 20px auto;
+}
 
-
-
-
-
+.pattern-curve {
+  max-width: 375px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
 
 .carousel {
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 375px;
+  margin: auto;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.image-tanya , .image-john {
+  width: 270px;
+  border-radius: 5px;
+  box-shadow: 0px 50px 20px #00000021;
 }
 
 .image-text {
-  position: absolute;
   display: none;
 }
 
@@ -38,11 +69,52 @@
 }
 
 .carousel-controls {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  margin-top: 300px;
   text-align: center;
+  background-color: white;
+  width: 90px;
+  height: 40px;
+  border-radius: 100px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .prev-btn,
 .next-btn {
-  margin: 0 10px;
-  background-color: tomato;
+  border: none;
+  background-color: transparent;
+  padding: 0px 15px;
 }
+
+.box_01 ,.box_02 {
+  margin-top: 70px;
+}
+
+.text_box_01 ,.text_box_02 {
+  width: 90%;
+  margin: auto;
+  font-weight: 300; 
+  color: var(--Dark_Blue);
+}
+
+.name {
+  margin-top: 20px;
+  color: var(--Dark_Blue);
+  font-weight: 700;
+}
+
+.profission {
+  color: var(--Grayish_Blue);
+}
+
+}
+
+
+
+
+
