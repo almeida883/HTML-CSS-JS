@@ -21,12 +21,9 @@
       main {
         max-width: 1440px;
         max-height: 800px;
+        margin: auto;
       }
 
-      .box_images {
-
-      }
-      
       .box_images_inside {
         display: flex;
         flex-direction: row-reverse;
@@ -56,8 +53,9 @@
       .carousel {
         position: absolute;
         top: 0;
-        left: 0;
-        right: 0;
+        left: 50%;
+        transform: translateX(-50%);
+ 
       }
 
 
@@ -71,8 +69,8 @@
         top: 0;
         left:0;
         right: 0;
-        margin-right: 170px;
-        margin-top: 100px;
+        margin-left: 500px;
+        margin-top: 150px;
       }
       
       .image-text {
@@ -92,9 +90,7 @@
         top: 0;
         left: 0;
         right: 0;
-        margin: auto;
-        margin-top: 580px;
-        margin-left: 900px;
+        margin-top: 620px;
         text-align: center;
         background-color: white;
         width: 110px;
@@ -102,6 +98,8 @@
         border-radius: 100px;
         display: flex;
         justify-content: space-between;
+        left: 50%;
+        transform: translateX(70%);
       }
       
       .prev-btn,
@@ -117,7 +115,7 @@
         top: 0;
         left: 0;
         margin-top: 250px;
-        margin-left: 230px;
+        margin-left: 40px;
       }
       
       .text_box_01 ,.text_box_02 {
