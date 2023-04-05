@@ -42,5 +42,15 @@ $(document).ready(function() {
   });
   
 
-
+  $('#rangeInput_01,#rangeInput_02').on('input', function() {
+    updateRangeInput($(this).val());
+  });
+  
+  function updateRangeInput(value) {
+    var percent = value * 7.8 + '%';
+    var gradient = 'linear-gradient(90deg, var(--Soft_Cyan) ' + percent + ', #ddd ' + percent + ')';
+    $('#rangeInput_01,#rangeInput_02').css('background', gradient);
+  }
+  
+  
 });

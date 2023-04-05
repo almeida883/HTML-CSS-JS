@@ -31,6 +31,9 @@
   height: 8px;
   background: #ddd;
   outline: none;
+  background-image: linear-gradient(hsl(174, 77%, 80%), hsl(174, 77%, 80%));
+  background-repeat: no-repeat;
+  background-size: 45% 100%;
 }
 
 .slider-input::-webkit-slider-thumb {
@@ -230,6 +233,7 @@ h2 {
   justify-content: center;
   align-items: center;
   font-size: 60px;
+  color: var(--Dark_Desaturated_Blue);
 }
 
 .currency , .price , .cents {

@@ -32,6 +32,9 @@
   height: 8px;
   background: #ddd;
   outline: none;
+  background-image: linear-gradient(hsl(174, 77%, 80%), hsl(174, 77%, 80%));
+  background-repeat: no-repeat;
+  background-size: 45% 100%;
 }
 
 .slider-input::-webkit-slider-thumb {
@@ -70,6 +73,7 @@
   font-size: 64px;
   font-weight: bold;
   margin-bottom: 20px;
+  color: var(--Dark_Desaturated_Blue);
 }
 
 .currency {
