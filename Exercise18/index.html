@@ -10,9 +10,6 @@
 <!-- JQuery -->
 <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
 
-<!-- Bootstrap -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-
 <!-- Css Files -->
 <link rel="stylesheet" href="mobile.css"> 
 <link rel="stylesheet" href="desktop.css">
@@ -27,25 +24,25 @@
 </head>
 <body>
 
-
-  Simple, traffic-based pricing
-  Sign-up for our 30-day trial. No credit card required. 
-
-  Pageviews
-
-
+  <header>
+    <h1>Simple, traffic-based pricing</h1>
+    <h2>Sign-up for our 30-day trial.</h2>
+    <h2>No credit card required.</h2>
+  </header>
 
   <div class="pricing-container">
 
     <div class="pricing-card">
-
-      <div class="card-price">
-        <span class="currency">$</span><span class="price"></span>.<span class="cents">00</span><span class="billing-period">/month</span>
-      </div>
-
+      
       <div class="pricing-slider">
-        <input type="range" min="1" max="12" step="1" value="6" class="slider-input">
-        <span class="page-views"></span>
+        <div class="ajust_flex">
+          <span class="page-views"></span>
+          <input type="range" min="1" max="12" step="1" value="6" class="slider-input display_none_desktop">
+          <div class="card-price">
+            <span class="currency">$</span><span class="price"></span>.<span class="cents">00</span><span class="billing-period">/month</span>
+          </div>
+        </div>
+        <input type="range" min="1" max="12" step="1" value="6" class="slider-input display_none_mobile ">
       </div>
 
       <div class="pricing-toggle">
@@ -54,17 +51,18 @@
           <input type="checkbox" class="switch-input">
           <span class="switch-ball"></span>
         </label>
-        <span class="yearly-label">Yearly Billing 25% discount</span>
+        <span class="yearly-label">Yearly Billing <span class="off">-25% <span class="discount_text">discount</span></span></span>
       </div>
+
+      <hr>
       
       <div class="card-features">
-
         <ul>
-          <li><img src="images/icon-check.svg" alt="" class="">Unlimited websites</li>
-          <li><img src="images/icon-check.svg" alt="" class="">100% data ownership</li>
-          <li><img src="images/icon-check.svg" alt="" class="">Email reports</li>
+          <li><img src="images/icon-check.svg" alt="icon-check" class="icon-check">Unlimited websites</li>
+          <li><img src="images/icon-check.svg" alt="icon-check" class="icon-check">100% data ownership</li>
+          <li><img src="images/icon-check.svg" alt="icon-check" class="icon-check">Email reports</li>
         </ul>
-        <button>  Start my trial</button>
+        <button>Start my trial</button>
       </div>
     </div>
   </div>

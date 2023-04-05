@@ -9,7 +9,7 @@ $(document).ready(function() {
     var discountedPrice = pricePerMonth * (1 - discountFactor);
     var totalPrice = Math.floor(pageViews / 100) * discountedPrice;
     $('.card-price .price').text(totalPrice.toFixed(0));
-    $('.pricing-slider .page-views').text(pageViews.toLocaleString() + 'k pageviews');
+    $('.pricing-slider .page-views').text(pageViews.toLocaleString() + 'K PAGEVIEWS');
   }
 
   // Initialize pricing based on default values
@@ -31,44 +31,16 @@ $(document).ready(function() {
     $('.monthly-label, .yearly-label').toggleClass('active');
   });
 
-  // Botão de ativação do plano anual
-  var annualBtn = $('#annual-btn');
-  var isActive = false;
-
-  annualBtn.on('click', function() {
-    if (isActive) {
-      isActive = false;
-      annualBtn.addClass('inactive');
-      annualBtn.text('Ativar Plano Anual');
-      pricePerMonth = 16;
-      updatePricing();
-      $('.slider-input').val(6);
+  $('.switch-input').on('change', function() {
+    if ($(this).is(':checked')) {
+      $('.switch-ball').addClass('switch-ball-after');
+      $('.switch').addClass('switch-after');
     } else {
-      isActive = true;
-      annualBtn.removeClass('inactive');
-      annualBtn.text('Desativar Plano Anual');
-      pricePerMonth = 16 * 0.75;
-      updatePricing();
-      $('.slider-input').val(12);
+      $('.switch-ball').removeClass('switch-ball-after');
+      $('.switch').removeClass('switch-after');
     }
   });
-
-
-
-// Adiciona a classe 'switch-label' ao elemento 'label' da checkbox
-$('.switch input ,.switch-label ').each(function() {
-  $(this).wrap('<label class="switch-label"></label>');
-});
-
-// Adiciona o elemento da bola ao final do 'label'
-$('.switch-label').append('<span class="switch-ball"></span>');
-
-// Altera a classe do 'label' quando a checkbox é clicada
-$('.switch-label').on('click', function() {
-  $(this).toggleClass('switch-label-checked');
-});
-
-
+  
 
 
 });

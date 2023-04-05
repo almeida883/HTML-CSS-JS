@@ -23,10 +23,265 @@
   --Manroper:'Manrope', sans-serif;
 }
 
-
+/* Bar */
+  
+.slider-input {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 8px;
+  background: #ddd;
+  outline: none;
 }
 
+.slider-input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  background-image: url(images/icon-slider.svg);
+  background-repeat: no-repeat;
+  background-color: var(--Strong_Cyan);
+  background-position: center;
+  cursor: pointer;
+}
 
+.slider-input::-moz-range-thumb {
+  appearance: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  background-image: url(images/icon-slider.svg);
+  background-repeat: no-repeat;
+  background-color: var(--Strong_Cyan);
+  background-position: center;
+  cursor: pointer;
+}
+
+/* Card Price etc*/
+
+.card-price {
+  font-size: 64px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.currency {
+  font-size: 32px;
+  margin-right: 5px;
+}
+
+.price {
+  font-size: 64px;
+}
+
+.cents {
+  font-size: 32px;
+  margin-left: 5px;
+}
+
+.billing-period {
+  font-size: 24px;
+  margin-left: 5px;
+  vertical-align: super;
+}
+
+.card-features {
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+li i {
+  color: #2196F3;
+  margin-right: 5px;
+}
+
+button {
+  background-color: #2196F3;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+button:hover {
+  background-color: #0c7cd5;
+}
+
+/* Pricing-toggle */
+.switch-input {
+display: none;
+}
+
+.switch {
+position: relative;
+background-color: rgb(194, 194, 194);
+width: 55px; /* 33*/ 
+height: 30px;
+border-radius: 100px;
+margin: 0px 20px;
+}
+
+.switch-after {
+background-color: rgb(195, 233, 183);;
+}
+
+.switch-ball {
+position: absolute;
+top: 0;
+bottom: 0;
+margin: auto;
+transform: translateX(-100%);
+width: 25px;
+height: 25px;
+border-radius: 50%;
+background-color: #ddd;
+transition: all 0.3s ease;
+}
+
+.switch-ball-after {
+transform: translateX(0%);
+background-color: rgb(0, 194, 0);
+}
+
+/* Body */
+
+body {
+  margin: 0;
+  padding: 5%;
+  font-family: var(--Manroper);
+  background-color: var(--Very_Pale_Blue);
+
+  background-image: url(images/bg-pattern.svg);
+  background-repeat: no-repeat;
+}
+
+header {
+  background-image: url(images/pattern-circles.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 300px;
+  text-align: center;
+  height: 310px;
+}
+
+h1 {
+  color: var(--Dark_Desaturated_Blue);
+  margin-bottom: 30px;
+  font-weight: 800;
+  padding-top: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h2 {
+  color: var(--Grayish_Blue);
+  margin: 15px 0px;
+}
+
+.pricing-container {
+  margin-top: 100px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 50px #0000002a;
+  padding: 50px 0px;
+  text-align: center;
+  max-width: 650px;
+  margin: auto;
+  margin-top: 70px;
+  background-color: white;
+  position: relative;
+}
+
+.pricing-slider , .pricing-toggle {
+  padding: 0px 50px;
+}
+
+.display_none_mobile {
+  display: none;
+}
+
+.page-views {
+  color: var(--Grayish_Blue);
+  font-family: var(--Manroper);
+  font-size: 25px;
+  font-weight: 800;
+  letter-spacing: 5px;
+}
+
+.slider-input {
+  margin: 50px 0px;
+}
+
+.card-price {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 60px;
+}
+
+.currency , .price , .cents {
+  font-size: 60px;
+}
+.billing-period {
+  color: var(--Grayish_Blue);
+  font-size: 30px;
+}
+
+.pricing-toggle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--Grayish_Blue);
+  margin: 50px 0px;
+  font-size: 25px;
+}
+
+.off {
+  background-color: var(--Light_Grayish_Red);
+  color: var(--Light_Red);
+  border-radius: 50px;
+  padding: 5px 10px;
+}
+
+.discount_text {
+  display: none;
+}
+
+.card-features {
+  margin-top: 40px;
+}
+
+.icon-check {
+  margin-right: 10px;
+}
+
+li {
+  color: var(--Grayish_Blue);
+}
+
+button {
+  background-color: var(--Dark_Desaturated_Blue);
+  border-radius: 50px;
+  width: 240px;
+  height: 60px;
+  color: var(--Pale_Blue);
+  font-family: var(--Manroper);
+}
+
+}
 
 
 
