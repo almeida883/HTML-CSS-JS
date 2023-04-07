@@ -2,6 +2,135 @@
 
 @media (min-width: 991px) {  
 
+    :root {
+ 
+        /*### Primary*/
+      
+      --Purple: hsl(259, 100%, 65%);
+      --Light_red: hsl(0, 100%, 67%);
+      
+        /*### Neutral*/
+      
+      --White: hsl(0, 0%, 100%);
+      --Off_white: hsl(0, 0%, 94%);
+      --Light_grey: hsl(0, 0%, 86%);
+      --Smokey_grey: hsl(0, 1%, 44%);
+      --Off_black: hsl(0, 0%, 8%);
+      
+      --Poppins:'Poppins', sans-serif;
+      }
+      
+      body {
+        margin: 0;
+        
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      
+        background-color: var(--Light_grey);
+        font-family: var(--Poppins);
+      }
+      
+      main {
+        background-color: var(--White);
+        width: 600px;
+        height: 450px;
+        border-radius: 20px 20px 100px 20px;
+        padding: 40px;
+      }
+      
+      form {
+        display: flex;
+      }
+      
+      .box_of_label {
+        width: 150px;
+      }
+      
+      label {
+        font-weight: 800;
+        color: var(--Smokey_grey);
+        letter-spacing: 3px;
+        font-size: 12px;
+      }
+      
+      input {
+        border-style: solid;
+        border-color: var(--Light_grey);
+        border-radius: 5px;
+        border-width: 1px;
+        width: 120px;
+        height: 55px;
+        margin-top: 1px;
+      
+        font-family: var(--Poppins);
+        text-indent: 5px;
+        font-size: 25px;
+      }
+      
+      input:focus {
+        outline: none; 
+        border-color: var(--Purple); 
+      }
+      
+      input[type="number"]::-webkit-outer-spin-button,
+      input[type="number"]::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
+      
+      .error_message_day,.error_message_month,.error_message_year,.error_day,.error_month,.error_year {
+        color: var(--Light_red);
+        font-size: 5px;
+        margin-top: 2px;
+        font-size: 10px;
+      }
+      
+      hr {
+        margin: 50px 0px;
+        opacity: 0.3;
+      }
+      
+      .icon-arrow {
+        background-color: var(--Purple);
+        border-radius: 100px;
+        padding: 20px;
+        width: 40px;
+      
+        position: absolute;
+        transform: translate(650%,-115%);
+      }
+      
+      .icon-arrow:hover {
+        cursor: pointer;
+        background-color: var(--Off_black);
+      }
+      
+      .margin_top {
+        margin-top: -50px;
+      }
+      
+      .text {
+        font-weight: 800;
+        font-size: 70px;
+        color: var(--Off_black);
+        font-style: italic;
+      }
+      
+      .text span {
+        color: var(--Purple);
+        font-size: 75px;
+      }
+      
+      .border_color_red {
+        border-color: var(--Light_red);
+      }
+      
+      .color_red {
+        color: var(--Light_red);
+      }
+      
 }
 
 

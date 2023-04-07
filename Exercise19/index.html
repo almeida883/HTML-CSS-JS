@@ -29,23 +29,23 @@
 <main>
   <form>
     <div class="box_of_label">
-      <label for="dia">DAY</label>
+      <label for="dia" class="label_text_day">DAY</label>
       <input type="number" id="dia" name="dia" min="1" max="31" required placeholder="DD">
-      <div class="error_message">This field is required</div>
+      <div class="error_message_day">This field is required</div>
       <div class="error_day">Must be a valid day</div>
     </div>
     
     <div class="box_of_label middle_input">
-      <label for="mes">MONTH</label>
+      <label for="mes" class="label_text_month">MONTH</label>
       <input type="number" id="mes" name="mes" min="1" max="12" required placeholder="MM">
-      <div class="error_message">This field is required</div>
+      <div class="error_message_month">This field is required</div>
       <div class="error_month">Must be a valid month</div>
     </div>
     
     <div class="box_of_label">
-      <label for="ano">YEAR</label>
+      <label for="ano" class="label_text_year">YEAR</label>
       <input type="number" id="ano" name="ano" min="1900" max="9999" required placeholder="YYYY">
-      <div class="error_message">This field is required</div>
+      <div class="error_message_year">This field is required</div>
       <div class="error_year">Must be a valid past</div>
     </div>
   </form>
