@@ -17,7 +17,111 @@
 --Smokey_grey: hsl(0, 1%, 44%);
 --Off_black: hsl(0, 0%, 8%);
 
---Manroper:'Manrope', sans-serif;
+--Poppins:'Poppins', sans-serif;
+}
+
+body {
+  margin: 0;
+  
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  background-color: var(--Light_grey);
+  font-family: var(--Poppins);
+}
+
+main {
+  background-color: var(--White);
+  width: 270px;
+  height: 400px;
+  border-radius: 20px 20px 100px 20px;
+  padding: 40px;
+}
+
+form {
+  display: flex;
+  justify-content: space-between;
+}
+
+.box_of_label {
+  width: 100%;
+}
+
+.middle_input {
+  margin: 0px 36px;
+}
+
+label {
+  font-weight: 800;
+  color: var(--Smokey_grey);
+  letter-spacing: 3px;
+  font-size: 10px;
+}
+
+input {
+  border-style: solid;
+  border-color: var(--Light_grey);
+  border-radius: 5px;
+  border-width: 1px;
+  width: 60px;
+  height: 35px;
+  margin-top: 1px;
+
+  font-family: var(--Poppins);
+  text-indent: 5px;
+}
+
+input:focus {
+  outline: none; 
+  border-color: var(--Purple); 
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.error_message,.error_day,.error_month,.error_year {
+  color: var(--Light_red);
+  font-size: 5px;
+}
+
+hr {
+  margin: 70px 0px;
+}
+
+.icon-arrow {
+  background-color: var(--Purple);
+  border-radius: 100px;
+  padding: 15px;
+  width: 30px;
+
+  position: absolute;
+  transform: translate(180%,-170%);
+}
+
+.icon-arrow:hover {
+  cursor: pointer;
+  background-color: var(--Off_black);
+}
+
+.margin_top {
+  margin-top: -30px;
+}
+
+.text {
+  font-weight: 800;
+  font-size: 45px;
+  color: var(--Off_black);
+  font-style: italic;
+}
+
+.text span {
+  color: var(--Purple);
+  font-size: 50px;
 }
 
 }

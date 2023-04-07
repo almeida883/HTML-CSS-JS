@@ -1,15 +1,19 @@
+$('.error_message,.error_day,.error_month,.error_year').hide();
+
+
 $(function() {
   var anoAtual = new Date().getFullYear(); // adicionando a variável anoAtual
 
-  $('#calcular').click(function() {
+  $('#icon-arrow').click(function() {
     var dia = $('#dia').val();
     var mes = $('#mes').val();
     var ano = $('#ano').val();
 
     // Verifica se os campos estão preenchidos
     if (dia === '' || mes === '' || ano === '') {
-      alert('Por favor, preencha todos os campos!');
-      return;
+      $('.error_message').show();
+    } else {
+      $('.error_message').hide();
     }
 
     // Verifica se o ano, mês e dia são válidos
@@ -18,11 +22,10 @@ $(function() {
     var mesAtual = dataAtual.getMonth() + 1;
     
     if (ano > anoAtual || ano < 1 || (ano == anoAtual && mes > mesAtual) || (ano == anoAtual && mes == mesAtual && dia > diaAtual) || mes < 1 || mes > 12 || dia < 1 || dia > diasNoMes(mes, ano)) {    
-      alert('Por favor, insira uma data válida!');
-      return;
+      $('.error_day,.error_month,.error_year').show();
+    } else {
+      $('.error_day,.error_month,.error_year').hide();
     }
-    
-    
 
     function diasNoMes(mes, ano) {
       if (mes == 2) {
@@ -41,10 +44,11 @@ $(function() {
     // Verifica se a data é inválida
     var data = new Date(ano, mes - 1, dia);
     if (data.getFullYear() != ano || data.getMonth() + 1 != mes || data.getDate() != dia) {
-      alert('Data inválida!');
-      return;
+      $('.error_day,.error_month,.error_year').show();
+    } else {
+      $('.error_day,.error_month,.error_year').hide();
     }
-
+    
     var diferenca = Date.now() - data.getTime();
     var idade = new Date(diferenca);
 
@@ -52,7 +56,10 @@ $(function() {
     var meses = idade.getUTCMonth();
     var dias = idade.getUTCDate() - 1;
 
-    var resultado = 'Sua idade é: ' + anos + ' anos, ' + meses + ' meses e ' + dias + ' dias.';
-    $('#resultado').text(resultado);
+    $('#years').text(anos);
+    $('#months').text(meses);
+    $('#days').text(dias);
+
+
   });
 });

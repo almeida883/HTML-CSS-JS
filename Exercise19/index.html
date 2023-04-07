@@ -26,37 +26,37 @@
 </head>
 <body>
 
-<label for="dia">Dia:</label>
-<input type="number" id="dia" name="dia" min="1" max="31" required>
-		
-<label for="mes">Mês:</label>
-<input type="number" id="mes" name="mes" min="1" max="12" required>
-		
-<label for="ano">Ano:</label>
-<input type="number" id="ano" name="ano" min="1900" max="9999" required>
-
-<button id="calcular" type="button">Calcular Idade</button>
-
-<div id="resultado"></div>
-
+<main>
+  <form>
+    <div class="box_of_label">
+      <label for="dia">DAY</label>
+      <input type="number" id="dia" name="dia" min="1" max="31" required placeholder="DD">
+      <div class="error_message">This field is required</div>
+      <div class="error_day">Must be a valid day</div>
+    </div>
+    
+    <div class="box_of_label middle_input">
+      <label for="mes">MONTH</label>
+      <input type="number" id="mes" name="mes" min="1" max="12" required placeholder="MM">
+      <div class="error_message">This field is required</div>
+      <div class="error_month">Must be a valid month</div>
+    </div>
+    
+    <div class="box_of_label">
+      <label for="ano">YEAR</label>
+      <input type="number" id="ano" name="ano" min="1900" max="9999" required placeholder="YYYY">
+      <div class="error_message">This field is required</div>
+      <div class="error_year">Must be a valid past</div>
+    </div>
+  </form>
   
-
-
-
-
-  Day
-  DD
-
-  Month
-  MM
-
-  Year
-  YYYY
-
-  -- years
-  -- months
-  -- days
+  <hr>
+  <img src="assets/images/icon-arrow.svg" alt="icon-arrow" class="icon-arrow" id="icon-arrow">
   
+  <div class="text margin_top"><span id="years">--</span> years</div>
+  <div class="text"><span id="months">--</span> months</div>
+  <div class="text"><span id="days">--</span> days</div>
+</main>
 
 <!-- Js File -->
 <script type="text/javascript" src="index.js"></script>
