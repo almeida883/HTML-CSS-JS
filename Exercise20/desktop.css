@@ -2,13 +2,337 @@
 
 @media (min-width: 991px) {  
 
+    :root {
 
-}
-
-
-
-
-
-
+        /*### Primary*/
       
- 
+      --Lime_Green: hsl(163, 72%, 41%);
+      --Bright_Red: hsl(356, 69%, 56%);
+      
+      --Facebook: hsl(208, 92%, 53%);
+      --Twitter: hsl(203, 89%, 53%);
+      --Instagram-gradient: linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+      --YouTube: hsl(348, 97%, 39%);
+      
+      /*#### Dark Theme*/
+      
+      --Toggle-gradient: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+      
+      /*#### Light Theme*/
+      
+      --Toggle-Bg: hsl(230, 22%, 74%);
+      
+      /*### Neutral*/
+      
+      /*#### Dark Theme*/
+      
+      --Very_Dark_Blue-Bg: hsl(230, 17%, 14%);
+      --Very_Dark_Blue-Top-Bg: hsl(232, 19%, 15%);
+      --Dark_Desaturated_Blue: hsl(228, 28%, 20%);
+      --Desaturated_Blue: hsl(228, 34%, 66%);
+      --White: hsl(0, 0%, 100%);
+      
+      /*#### Light Theme*/
+      
+      --White: hsl(0, 0%, 100%);
+      --Very_Pale_Blue: hsl(225, 100%, 98%);
+      --Light_Grayish_Blue: hsl(227, 47%, 96%);
+      --Dark_Grayish_Blue: hsl(228, 12%, 44%);
+      --Very_Dark_Blue: hsl(230, 17%, 14%);
+      
+      --Inter:'Inter', sans-serif;
+      }
+      
+      body {
+        background-color: var(--Very_Dark_Blue-Bg);
+        transition: background-color 0.5s ease-in-out;
+        color: var(--White);
+        font-family: var(--Inter);
+        margin: 0;
+        padding: 50px 100px;
+        margin: auto;
+        width: 1240px;
+      }
+
+      body.light-mode {
+        background-color: var(--White);
+        color: var(--Very_Dark_Blue);
+      }
+      
+      .bg_pattern {
+        position: absolute;
+        z-index: -1;
+        width: 100%;
+        height: 250px;
+        top: 0;
+        left: 0;
+        background-color: var(--Dark_Desaturated_Blue);
+        border-radius: 0px 0px 50px 50px;
+        transition: background-color 0.5s ease-in-out;
+      }
+
+      .light-mode .bg_pattern {
+        background-color: var(--Very_Pale_Blue);
+      }
+
+      /* Toggle Button */
+      
+      .toggle-button {
+        display: inline-block;
+        position: relative;
+        width: 60px;
+        height: 30px;
+        cursor: pointer;
+        background-image: var(--Toggle-gradient);
+        border-radius: 50px;
+      }
+      
+      .toggle-box {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 30px;
+        height: 30px;
+        border-radius: 15px;
+        transition: transform 0.3s ease-in-out;
+      }
+      
+      .toggle-ball {
+        position: absolute;
+        top: 2px;
+        left: 2px;
+        width: 26px;
+        height: 26px;
+        border-radius: 50%;
+        background-color: var(--Very_Dark_Blue-Top-Bg);
+        transition: transform 0.3s ease-in-out;
+      }
+      
+      .light-mode .toggle-box {
+        transform: translateX(30px);
+      }
+      
+      .light-mode .toggle-ball {
+        transform: translateX(0px);
+        background-color: white;
+      }
+      
+      .light-mode .toggle-button {
+        background-image: none;
+        background-color: var(--Dark_Grayish_Blue);
+      }
+      
+      .box_toggle_button {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      
+      .text_box_toggle_button {
+        color: var(--Desaturated_Blue);
+        font-family: var(--Inter);
+        font-weight: 700;
+        margin-right: 15px;
+      }
+      
+      /* General Structure */
+      
+      .container_02 {
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .social_box, .overview_box {
+        border-radius: 5px;
+        padding: 20px;
+        width: 250px;
+        flex-shrink: 0;
+      }
+      
+      .social_box {
+        text-align: center;
+      }
+      
+      .border_top_01 {
+        border-top: 4px solid var(--Facebook);
+      }
+      
+      .border_top_02 {
+        border-top: 4px solid var(--Twitter);
+      }
+      
+      .border_top_03 {
+        position: absolute;
+        width: 290px;
+        height: 4px;
+        border-radius: 5px 5px 0px 0px;
+        background-image: var(--Instagram-gradient);
+        margin-left: -20px;
+        transform: translateY(-500%);
+      }
+      
+      .border_top_04 {
+        border-top: 4px solid var(--YouTube);
+      }
+      
+      .link_of_social {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: var(--Desaturated_Blue);
+        font-size: 14px;
+        font-weight: 700;
+        margin: 10px 0px 20px 0px;
+      }
+      
+      .icon-facebook ,.icon-twitter ,.icon-instagram ,.icon-youtube {
+        margin-right: 10px;
+      }
+      
+      .number_of_social {
+        font-weight: 700;
+        font-size: 50px;
+        margin: 10px 0px;
+      }
+      
+      .text_after_numbers {
+        color: var(--Desaturated_Blue);
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        margin-top: -10px;
+      }
+      
+      .box_today {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: var(--Lime_Green);
+        font-weight: 700;
+        margin: 25px 0px 10px 0px;
+        font-size: 14px;
+      }
+      
+      .border_top_04 .box_today {
+        color: var(--Bright_Red);
+        font-weight: 700;
+      }
+      
+      .icon-up ,.icon-down {
+        margin-right: 5px;
+      }
+      
+      /* Header Dark Theme */
+      
+      .social_box, .overview_box {
+        background-color: var(--Dark_Desaturated_Blue);
+        transition: background-color 0.5s ease-in-out;
+      }
+      
+        header {
+          margin: 0 auto;
+          display: flex;
+          justify-content: space-between;
+        }
+      
+        h1 {
+          font-size: 20px;
+          margin-bottom: -6px;
+        }
+      
+        h2 {
+          font-size: 12px;
+          color: var(--Desaturated_Blue);
+        }
+      
+        hr {
+          display: none;
+        }
+      
+        .text_overview {
+          font-weight: 700;
+          font-size: 20px;
+          margin: 40px 0px 20px 0px;
+        }
+      
+        /* Header Dark Theme -- Overview - Today */
+        /* General Structure */
+        .display_flex_justify {
+          display: flex;
+          justify-content: space-between;
+        }
+      
+        .display_flex_justify .icon-facebook , .display_flex_justify .icon-twitter , .display_flex_justify .icon-instagram , .display_flex_justify .icon-youtube {
+          margin-right: 0px;
+        }
+        /* Header Dark Theme */
+        .text_overview_box {
+          font-weight: 700;
+          color: var(--Desaturated_Blue);
+          font-size: 14px;
+        }
+        
+        /* General Structure */
+      
+        .container_04 , .container_05 {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .number_of_overview_box {
+          font-weight: 700;
+          font-size: 30px;
+          margin-top: 20px;
+        }
+      
+        .box_of_percentage {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-top: 30px;
+        }
+        
+        .display_flex_justify .red {
+          color: var(--Bright_Red);
+        }
+      
+        .display_flex_justify .green {
+          color: var(--Lime_Green);
+        }
+      
+        /* Light Theme */
+      
+        .light-mode .social_box, .light-mode .overview_box {
+          background-color: var(--Light_Grayish_Blue);
+        }
+        
+        .light-mode h2 {
+          color: var(--Dark_Grayish_Blue);
+        }
+      
+        .light-mode .text_overview_box {
+          color: var(--Dark_Grayish_Blue);
+        }
+      
+        /* Hover */ 
+
+        .toggle-box:hover {
+            cursor: pointer;
+        }
+        
+        .social_box:hover, .overview_box:hover {
+            cursor: pointer;
+            background-color: var(--Dark_Grayish_Blue);
+        }
+        
+        .light-mode .social_box:hover, .light-mode .overview_box:hover {
+            cursor: pointer;
+            background-color: var(--Very_Pale_Blue);
+        }
+
+    }
+      
+      
+      
+      

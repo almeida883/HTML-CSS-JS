@@ -1,0 +1,65 @@
+@charset "UTF-8";
+
+@media (max-width: 991px) {  
+
+:root {
+
+--Inter:'Inter', sans-serif;
+
+}
+
+
+/* Toggle Button */
+
+.toggle-button {
+  display: inline-block;
+  position: relative;
+  width: 60px;
+  height: 30px;
+  cursor: pointer;
+  background-image: var(--Toggle-gradient);
+  border-radius: 50px;
+}
+
+.toggle-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.toggle-ball {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background-color: var(--Very_Dark_Blue-Top-Bg);
+  transition: transform 0.3s ease-in-out;
+}
+
+.dark-mode .toggle-box {
+  transform: translateX(30px);
+}
+
+.dark-mode .toggle-ball {
+  transform: translateX(0px);
+  background-color: white;
+}
+
+.dark-mode .toggle-button {
+  background-image: none;
+  background-color: var(--Dark_Grayish_Blue);
+}
+
+
+
+
+}
+
+
+

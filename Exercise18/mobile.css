@@ -131,7 +131,7 @@ display: none;
 .switch {
 position: relative;
 background-color: rgb(194, 194, 194);
-width: 55px; /* 33*/ 
+width: 55px; 
 height: 30px;
 border-radius: 100px;
 margin: 0px 20px;
