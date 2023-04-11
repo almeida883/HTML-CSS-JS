@@ -300,6 +300,22 @@ body.light-mode {
     color: var(--Dark_Grayish_Blue);
   }
 
+      /* Hover */
+    .toggle-box:hover {
+     cursor: pointer;
+    }
+    
+    .social_box:hover, .overview_box:hover {
+      cursor: pointer;
+      background-color: var(--Dark_Grayish_Blue);
+    }
+    
+    .light-mode .social_box:hover, .light-mode .overview_box:hover {
+      cursor: pointer;
+      background-color: var(--Very_Pale_Blue);
+    }
+
+
 }
 
 
