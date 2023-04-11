@@ -3,7 +3,194 @@
 @media (min-width: 991px) {  
 
 
+
+      :root {
+
+        /*### Primary */
+      
+        --Linear_Gradient: linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+      
+        /*### Neutral */
+        
+        --Soft_blue: hsl(237, 63%, 64%);
+        --Very_Light_Grayish_Blue: hsl(240, 78%, 98%);
+        --Light_Grayish_Blue: hsl(234, 14%, 74%);
+        --Grayish_Blue: hsl(233, 13%, 49%);
+        --Dark_Grayish_Blue: hsl(232, 13%, 33%);
+      
+        --Montserrat:'Montserrat', sans-serif;
+      
+      }
+      
+      /* Toggle Button */
+      
+      .toggle-button {
+        display: inline-block;
+        position: relative;
+        width: 60px;
+        height: 30px;
+        cursor: pointer;
+        background-image: var(--Linear_Gradient);
+        border-radius: 50px;
+      }
+      
+      .toggle-box {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 30px;
+        height: 30px;
+        border-radius: 15px;
+        transition: transform 0.3s ease-in-out;
+      }
+      
+      .toggle-ball {
+        position: absolute;
+        top: 3px;
+        left: 33px;
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        background-color: white;
+        transition: transform 0.3s ease-in-out;
+      }
+      
+      .annually .toggle-box {
+        transform: translateX(30px);
+      }
+      
+      .annually .toggle-ball {
+        transform: translateX(-60px);
+        background-color: white;
+      }
+      
+      .annually .toggle-button {
+        background-image: none;
+        background-image: var(--Linear_Gradient);;
+      }
+      
+      .box_toggle_button {
+        margin: 0px 10px;
+      }
+      
+      /* General Code */
+      
+      body {
+        width: 1440px;
+        margin: auto;
+        text-align: center;
+        font-family: var(--Montserrat);
+        background-color: var(--Very_Light_Grayish_Blue);
+        background-image: url('images/bg-top.svg'), url('images/bg-bottom.svg');
+        background-position: top right, bottom left;
+        background-repeat: no-repeat;
+      }
+
+      h1 {
+        margin-top: 50px;
+        color: var(--Dark_Grayish_Blue);
+        font-size: 30px;
+      }
+      
+      .box_of_toggle_button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: var(--Grayish_Blue);
+      }
+      
+       main {
+           display: flex;
+           justify-content: center;
+           margin-top: 80px;
+       }
+
+      .card_basic ,.card_professional ,.card_master {
+        width: 260px;
+        background-color: white;
+        border-radius: 10px;
+        padding: 20px 40px;
+        box-shadow: 0px 0px 20px #0000001e;
+        color: var(--Grayish_Blue);
+        height: 380px;
+      }
+      
+      .card_professional {
+        background-image: var(--Linear_Gradient);
+        color: white;
+        padding: 50px 40px;
+        margin-top: -30px;
+      }
+
+      .card_basic {
+        border-radius: 10px 0px 0px 10px;
+      }
+
+      .card_master {
+        border-radius: 0px 10px 10px 0px;
+      }
+      
+      
+      hr {
+        margin: 15px 0px;
+      }
+      
+      .price_monthly ,.price_annually {
+        color: var(--Dark_Grayish_Blue) ;
+        font-size: 60px;
+        margin: 20px 0px;
+      }
+      
+      .card_professional .price_monthly ,.card_professional .price_annually {
+        color: white;
+      }
+      
+      button {
+        border: none;
+        background-image: var(--Linear_Gradient);
+        font-family: var(--Montserrat);
+        text-transform: uppercase;
+        color: white;
+        width: 100%;
+        height: 40px;
+        border-radius: 5px;
+        margin-top: 20px;
+      }
+      
+      .card_professional button {
+        background-image: none;
+        background-color: white;
+        color: var(--Soft_blue);
+      }
+      
+      /* Hover */
+
+      .toggle-button:hover {
+        cursor: pointer;
+        opacity: 0.7;
+      }
+
+
+
+      .card_basic button:hover, .card_master button:hover {
+        background-image: none;
+        background-color: white;
+        color: var(--Soft_blue);
+        border: 1px solid var(--Soft_blue);
+        cursor: pointer;
+    }
+
+
+      .card_professional button:hover {
+        background-color: transparent;
+        color: white;
+        border: 1px solid #ffffff;
+        cursor: pointer;
+      } 
+
 }
+      
+
 
 
 

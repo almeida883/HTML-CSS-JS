@@ -4,10 +4,21 @@
 
 :root {
 
---Inter:'Inter', sans-serif;
+  /*### Primary */
+
+  --Linear_Gradient: linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+
+  /*### Neutral */
+  
+  --Soft_blue: hsl(237, 63%, 64%);
+  --Very_Light_Grayish_Blue: hsl(240, 78%, 98%);
+  --Light_Grayish_Blue: hsl(234, 14%, 74%);
+  --Grayish_Blue: hsl(233, 13%, 49%);
+  --Dark_Grayish_Blue: hsl(232, 13%, 33%);
+
+  --Montserrat:'Montserrat', sans-serif;
 
 }
-
 
 /* Toggle Button */
 
@@ -17,7 +28,7 @@
   width: 60px;
   height: 30px;
   cursor: pointer;
-  background-image: var(--Toggle-gradient);
+  background-image: var(--Linear_Gradient);
   border-radius: 50px;
 }
 
@@ -33,31 +44,106 @@
 
 .toggle-ball {
   position: absolute;
-  top: 2px;
-  left: 2px;
-  width: 26px;
-  height: 26px;
+  top: 3px;
+  left: 33px;
+  width: 24px;
+  height: 24px;
   border-radius: 50%;
-  background-color: var(--Very_Dark_Blue-Top-Bg);
+  background-color: white;
   transition: transform 0.3s ease-in-out;
 }
 
-.dark-mode .toggle-box {
+.annually .toggle-box {
   transform: translateX(30px);
 }
 
-.dark-mode .toggle-ball {
-  transform: translateX(0px);
+.annually .toggle-ball {
+  transform: translateX(-60px);
   background-color: white;
 }
 
-.dark-mode .toggle-button {
+.annually .toggle-button {
   background-image: none;
-  background-color: var(--Dark_Grayish_Blue);
+  background-image: var(--Linear_Gradient);;
 }
 
+.box_toggle_button {
+  margin: 0px 10px;
+}
 
+/* General Code */
 
+body {
+  width: 375px;
+  margin: auto;
+  text-align: center;
+  font-family: var(--Montserrat);
+  background-color: var(--Very_Light_Grayish_Blue);
+  background-image: url('images/bg-top.svg');
+  background-size: 300px;
+  background-position: top right -150px;
+  background-repeat: no-repeat;
+}
+
+h1 {
+  margin-top: 50px;
+  color: var(--Dark_Grayish_Blue);
+  font-size: 30px;
+}
+
+.box_of_toggle_button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--Grayish_Blue);
+}
+
+.card_basic ,.card_professional ,.card_master {
+  width: 260px;
+  margin: 20px auto;
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px 40px;
+  box-shadow: 0px 0px 20px #0000001e;
+  color: var(--Grayish_Blue);
+}
+
+.card_professional {
+  background-image: var(--Linear_Gradient);
+  color: white;
+}
+
+hr {
+  margin: 15px 0px;
+}
+
+.price_monthly ,.price_annually {
+  color: var(--Dark_Grayish_Blue) ;
+  font-size: 60px;
+  margin: 20px 0px;
+}
+
+.card_professional .price_monthly ,.card_professional .price_annually {
+  color: white;
+}
+
+button {
+  border: none;
+  background-image: var(--Linear_Gradient);
+  font-family: var(--Montserrat);
+  text-transform: uppercase;
+  color: white;
+  width: 100%;
+  height: 40px;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.card_professional button {
+  background-image: none;
+  background-color: white;
+  color: var(--Soft_blue);
+}
 
 }
 

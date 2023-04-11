@@ -16,15 +16,18 @@
 <link rel="stylesheet" href="desktop.css">
   
 <!-- Font -->  
-  
-  <title>Frontend Mentor | [Challenge Name Here]</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">  
 
+  <title>Frontend Mentor | [Challenge Name Here]</title>
 
 </head>
 <body>
 
   <header>
     <h1>Our Pricing</h1>
+    <div class="box_of_toggle_button">
     <div class="">Annually</div>
     <div class="box_toggle_button">
       <div class="toggle-button">
@@ -32,14 +35,15 @@
           <div class="toggle-ball"></div>
         </div>
     </div>
+    </div>
     <div class="">Monthly</div>
   </header>
 
   <main>
-    <div class="">
+    <div class="card_basic">
       <div class="">Basic</div>
-      <div class="">&dollar;19.99</div>
-      <div class="">&dollar;199.99</div>
+      <div class="price_monthly">&dollar;19.99</div>
+      <div class="price_annually">&dollar;199.99</div>
       <hr>
       <div class="">500 GB Storage</div>
       <hr>
@@ -47,12 +51,12 @@
       <hr>
       <div class="">Send up to 3 GB</div>
       <hr>
-      <div class="">Learn More</div>
+      <button class="">Learn More</button>
     </div>
-    <div class="">
+    <div class="card_professional">
       <div class="">Professional</div>
-      <div class="">&dollar;24.99</div>
-      <div class="">&dollar;249.99</div>
+      <div class="price_monthly">&dollar;24.99</div>
+      <div class="price_annually">&dollar;249.99</div>
       <hr>
       <div class="">1 TB Storage</div>
       <hr>
@@ -60,12 +64,12 @@
       <hr>
       <div class="">Send up to 10 GB</div>
       <hr>
-      <div class="">Learn More</div>
+      <button class="">Learn More</button>
     </div>
-    <div class="">
+    <div class="card_master">
       <div class="">Master</div>
-      <div class="">&dollar;39.99</div>
-      <div class="">&dollar;399.99</div>
+      <div class="price_monthly">&dollar;39.99</div>
+      <div class="price_annually">&dollar;399.99</div>
       <hr>
       <div class="">2 TB Storage</div>
       <hr>
@@ -73,7 +77,7 @@
       <hr>
       <div class="">Send up to 20 GB</div>
       <hr>
-      <div class="">Learn More</div>
+      <button class="">Learn More</button>
     </div>
   </main>
   
