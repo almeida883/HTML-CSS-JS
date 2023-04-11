@@ -115,6 +115,7 @@ h1 {
 
 hr {
   margin: 15px 0px;
+  opacity: 0.2;
 }
 
 .price_monthly ,.price_annually {
@@ -144,6 +145,28 @@ button {
   background-color: white;
   color: var(--Soft_blue);
 }
+
+      /* Hover */
+
+      .toggle-button:hover {
+        cursor: pointer;
+        opacity: 0.7;
+      }
+
+      .card_basic button:hover, .card_master button:hover {
+        background-image: none;
+        background-color: white;
+        color: var(--Soft_blue);
+        border: 1px solid var(--Soft_blue);
+        cursor: pointer;
+    }
+
+      .card_professional button:hover {
+        background-color: transparent;
+        color: white;
+        border: 1px solid #ffffff;
+        cursor: pointer;
+      } 
 
 }
 
