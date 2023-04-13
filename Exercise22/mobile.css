@@ -1,0 +1,296 @@
+@charset "UTF-8";
+
+@media (max-width: 698px) {  
+
+:root {
+
+  /*### Primary */
+
+  --White: hsl(0, 0%, 100%);
+  --Black: hsl(0, 0%, 0%);
+  --Dark_Gray: hsl(0, 0%, 55%);
+  --Very_Dark_Gray: hsl(0, 0%, 41%);
+
+  --Alata:'Alata', sans-serif;
+  --Josefin_Sans:'Josefin Sans', sans-serif;
+
+}
+
+
+/* Header */
+ /* Navbar mobile (AINDA NAO FIZ)*/
+
+  .navbar-toggler {
+    border: none;
+  }
+
+  .navbar-toggler-icon {
+   background-image: url(images/icon-hamburger.svg);
+  }
+
+  .navbar-toggler:focus {
+    outline: none;
+    box-shadow: none;
+  }
+
+  .navbar-toggler-icon-open-menu {
+    background-image: url(images/icon-close.svg);
+   }
+
+  .background_black {
+    background-image: none !important;
+    background-color: var(--Black);
+  }
+
+  .collapse {
+    position: absolute;
+    width: 112%;
+    transform: translate(-50%, 60%);
+    left: 50%;
+  }
+
+  .navbar-nav {
+    text-transform: uppercase;
+    background-color: var(--Black);
+    padding: 100px 0px;
+    padding-bottom: 100%;
+  }
+
+  .navbar-nav a {
+    color: var(--White);
+    font-family: var(--Josefin_Sans);
+    padding-left: 40px;
+    font-size: 30px;
+    font-weight: 300;
+  }
+
+  header li {
+    margin-top: 5px;
+  }
+
+  .navbar-nav .nav-item > .nav-link {
+    color: white;
+  }
+  
+header {
+  background-image: url(images/mobile/image-hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 600px;
+  color: var(--White);
+  padding: 20px;
+}
+
+.navbar {
+  background-color: transparent !important;
+}
+
+header h1 {
+  border: 1px solid #ffffff;
+  padding: 10px;
+  font-family: var(--Josefin_Sans);
+  text-transform: uppercase;
+  margin-top: 100px;
+  font-size: 40px;
+}
+
+/* Main */
+
+main {
+  text-align: center;
+  padding: 0px 20px;
+}
+
+ /* Container_01*/
+
+.image-interactive-desktop {
+  display: none;
+}
+
+.image-interactive-mobile {
+  width: 100%;
+  margin: auto;
+  margin-top: 100px;
+}
+
+.container_01 h2 {
+  font-family: var(--Josefin_Sans);
+  margin-top: 50px;
+  text-transform: uppercase;
+  font-size: 30px;
+ 
+}
+
+.container_01 p {
+  font-family: var(--Alata);
+  color: var(--Dark_Gray);
+}
+
+  /* Container_02*/
+
+.container_02 h1 {
+  font-family: var(--Josefin_Sans);
+  margin-top: 50px;
+  text-transform: uppercase;
+  font-size: 30px;
+}  
+
+.container_02 button {
+  border: 1px solid #000000;
+  background-color: transparent;
+
+  font-family: var(--Josefin_Sans);
+  text-transform: uppercase;
+  font-size: 15px;
+  padding: 10px 60px;
+  padding-top: 15px;
+  color: var(--Very_Dark_Gray);
+  font-family: var(--Alata);
+  letter-spacing: 4px;
+  font-weight: 700;
+}  
+
+.button_desktop {
+  display: none;
+}
+
+.card-container {
+  text-transform: uppercase;
+  color: var(--White);
+  text-align: left;
+  letter-spacing: 2px;
+}
+
+.card {
+  height: 110px;
+  margin: 20px 0px;
+  border: none;
+  border-radius: 0;
+ 
+  position: relative;
+}
+
+.black_degrade {
+  position: absolute;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.582), rgba(0, 0, 0, 0));
+  width: 100%;
+  height: 100%;
+}
+
+.card span {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 0px 0px 20px 20px;
+  font-size: 25px;
+  line-height: 25px;
+  color: var(--Dark_Gray);
+}
+
+
+.card_01 {
+  background-image: url(images/mobile/image-deep-earth.jpg);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center;
+}
+
+.card_02 {
+  background-image: url(images/mobile/image-night-arcade.jpg);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center;
+}
+
+.card_03 {
+  background-image: url(images/mobile/image-soccer-team.jpg);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center;
+}
+
+.card_04 {
+  background-image: url(images/mobile/image-grid.jpg);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center;
+}
+
+.card_05 {
+  background-image: url(images/mobile/image-from-above.jpg);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center;
+}
+
+.card_06 {
+  background-image: url(images/mobile/image-pocket-borealis.jpg);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center;
+}
+
+.card_07 {
+  background-image: url(images/mobile/image-curiosity.jpg);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center;
+}
+
+.card_08 {
+  background-image: url(images/mobile/image-fisheye.jpg);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center;
+}
+
+.card img {
+  display: none;
+}
+
+/* Footer */
+
+footer {
+  background-color: black;
+  text-align: center;
+  color: var(--White);
+  margin-top: 100px;
+  padding: 50px 0px;
+}
+
+.footer_box_desktop {
+  display: none;
+}
+
+.footer_box_information{
+  margin-top: 25px;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+  margin-top: 20px;
+  font-family: var(--Alata);
+}
+
+.box_social_icons {
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+  margin: 25px auto;
+}
+
+.copyright_text {
+  color: var(--Dark_Gray);
+}
+
+
+
+}
+
+
+
