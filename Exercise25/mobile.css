@@ -5,15 +5,13 @@
 :root {
 
   /* ### Primary */
-
   --Dark_Blue_intro_and_email_sign_up_background: hsl(217, 28%, 15%);
   --Dark_Blue_main_background: hsl(218, 28%, 13%);
   --Dark_Blue_footer_background: hsl(216, 53%, 9%);
   --Dark_Blue_testimonials_background: hsl(219, 30%, 18%);
   
   /* ### Accent */  
-  --Cyan_inside_call_to_action_gradient: hsl(176, 68%, 64%);
-  --Blue_inside_call_to_action_gradient: hsl(198, 60%, 50%);
+  --Gradient: linear-gradient(to right, hsl(176, 68%, 64%), hsl(198, 60%, 50%));
   --Light_Red_error: hsl(0, 100%, 63%);
   
   /* ### Neutral */
@@ -24,6 +22,173 @@
   --Raleway:'Raleway', sans-serif;
 
 }
+
+body {
+  margin: 0;
+  padding: 15px 20px;
+  background-color: var(--Dark_Blue_main_background);
+  color: var(--White);
+}
+
+ul, li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--White);
+}
+
+/* Header */
+
+header {
+
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 70px;
+}
+
+nav ul {
+  display: flex;
+  width: 200px;
+  justify-content: space-between;
+}
+
+/* Main */
+
+.illustration-intro {
+  width: 90%;
+  display: block;
+  margin: 40px auto;
+}
+
+ /* Container_01 */
+
+ .container_01 {
+  text-align: center;
+ }
+
+ .container_01 button {
+  border: none;
+  background-color: var(--Blue_inside_call_to_action_gradient);
+  padding: 13px 75px;
+  border-radius: 30px;
+  background-image: var(--Gradient);
+  color: var(--White);
+ }
+
+ /* Container_02 */
+
+ .container_02 {
+  text-align: center;
+  margin-top: 100px;
+ }
+
+ /* Container_03 */
+
+ .container_03 {
+
+ }
+
+ .illustration-stay-productive {
+  width: 90%;
+  display: block;
+  margin: 40px auto;
+}
+
+ /* Container_04 */
+
+ .container_04 {
+  margin-top: 200px;
+ }
+
+ .box_of_testimonials {
+  width: 70%;
+  height: 100%;
+  margin: 20px auto;
+  padding: 30px;
+  background-color: var(--Dark_Blue_testimonials_background);
+  border-radius: 10px;
+ }
+
+ .information_box  {
+  display: flex;
+  align-items: center;
+ }
+
+ .information_box img {
+  width: 30px;
+  border-radius: 100%;
+  margin-right: 10px;
+ }
+
+ /* Container_05 */
+
+ .container_05 {
+  text-align: center;
+  background-color: var(--Dark_Blue_intro_and_email_sign_up_background);
+  border-radius: 20px;
+  padding: 20px;
+ }
+
+input {
+  width: 79%;
+  padding: 13px 20px;
+  margin: 20px auto;
+  border-radius: 30px;
+}
+
+.container_05 button {
+  margin-bottom: 10px;
+
+  border: none;
+  background-color: var(--Blue_inside_call_to_action_gradient);
+  padding: 13px 75px;
+  border-radius: 30px;
+  background-image: var(--Gradient);
+  color: var(--White);
+}
+/* Footer */
+
+footer {
+  background-color: var(--Dark_Blue_footer_background);
+  margin: -20px;
+  padding: 40px;
+}
+
+footer ul {
+  padding: 0;
+}
+
+.icon_social_box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon_social_box i {
+  border: 1px solid #ffffff;
+  border-radius: 100%;
+  padding: 10px;
+  margin: 10px;
+}
+
+.fa-facebook-f {
+  padding: 10px 13px !important;
+}
+
+/* */
+
+/* */
+
+/* */
 
 
 
