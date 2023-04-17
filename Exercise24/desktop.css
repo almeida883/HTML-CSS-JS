@@ -19,6 +19,17 @@
         --Barlow_Condensed:'Barlow Condensed', sans-serif;
       }
       
+      .background-patern {
+        position: absolute;
+        z-index: -1;
+        right: 0;
+        display: block;
+        width: 650px;
+        height: 450px;
+        border-radius: 0px 0px 0px 100px;
+        background-color: var(--Light_Grayish_Blue);
+      }      
+
       /* Header */
       
       header {
@@ -27,6 +38,34 @@
       
       .navbar {
         background-color: transparent !important;
+      }
+
+      hr {
+        display: none;
+      }
+
+      .collapse {
+        font-family: var(--Barlow_Condensed);
+        font-weight: 700;
+        color: var(--Very_Dark_Blue);
+        font-size: 20px;
+      }
+
+      .collapse li {
+        margin: 0px 10px;
+      }
+
+      .ball_desktop {
+        background-color: var(--Grayish_Blue);
+        width: 10px;
+        height: 10px;
+        margin: 0px 40px;
+        margin-top: 20px;
+        border-radius: 100%;
+      }
+
+      .login_text {
+        color: var(--Grayish_Blue);
       }
 
       /* Main */
@@ -109,7 +148,19 @@
         font-size: 16px;
         margin-right: 20px;
       }
-      
+
+      /* Hover */
+
+      .nav-link:hover {
+        cursor: pointer;
+        text-decoration: underline;
+      }
+
+      .last_text button:hover {
+        cursor: pointer;
+        opacity: 0.5;
+      }
+
       }
       
       
