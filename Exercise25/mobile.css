@@ -12,20 +12,22 @@
   
   /* ### Accent */  
   --Gradient: linear-gradient(to right, hsl(176, 68%, 64%), hsl(198, 60%, 50%));
+  --Cyan: hsl(176, 68%, 64%);
+  --Blue: hsl(198, 60%, 50%);
   --Light_Red_error: hsl(0, 100%, 63%);
   
   /* ### Neutral */
   
   --White: hsl(0, 0%, 100%);
 
-  --Open_-Sans:'Open Sans', sans-serif;
+  --Open_Sans:'Open Sans', sans-serif;
   --Raleway:'Raleway', sans-serif;
 
 }
 
 body {
   margin: 0;
-  padding: 15px 20px;
+  padding: 0;
   background-color: var(--Dark_Blue_main_background);
   color: var(--White);
 }
@@ -42,13 +44,16 @@ a {
 /* Header */
 
 header {
-
+  background-color: var(--Dark_Blue_testimonials_background);
+  padding: 15px 20px;
 }
 
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  font-family: var(--Raleway);
 }
 
 .logo {
@@ -73,6 +78,12 @@ nav ul {
 
  .container_01 {
   text-align: center;
+  background-color: var(--Dark_Blue_testimonials_background);
+  background-image: url(images/bg-curvy-mobile.svg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: contain;
+  padding: 15px 20px;
  }
 
  .container_01 button {
@@ -84,17 +95,38 @@ nav ul {
   color: var(--White);
  }
 
+ .container_01 h1 {
+  font-family: var(--Raleway);
+ }
+
+ .container_01 p {
+  font-family: var(--Open_Sans);
+ }
+
+ .container_01 button {
+  font-family: var(--Raleway);
+ }
+
  /* Container_02 */
 
  .container_02 {
   text-align: center;
   margin-top: 100px;
+  padding: 15px 20px;
+ }
+
+ .container_02 h2 {
+  font-family: var(--Raleway);
+ }
+
+ .container_02 p {
+  font-family: var(--Open_Sans);
  }
 
  /* Container_03 */
 
  .container_03 {
-
+  padding: 15px 20px;
  }
 
  .illustration-stay-productive {
@@ -103,10 +135,47 @@ nav ul {
   margin: 40px auto;
 }
 
+.container_03 h2 {
+  font-family: var(--Raleway);
+ }
+
+ .container_03 p {
+  font-family: var(--Open_Sans);
+ }
+
+ .box_of_fylo_works::after {
+  content: '';
+  display: block;
+  margin-top: 5px;
+  width: 155px;
+  height: 1px;
+  background-color: var(--Cyan);
+ }
+
+ .box_of_fylo_works a {
+  color: var(--Cyan);
+  font-size: 16px;
+  font-family: var(--Raleway);
+ }
+
+ .box_of_fylo_works img {
+  width: 20px;
+  margin-bottom: -4px;
+ }
+
  /* Container_04 */
 
  .container_04 {
   margin-top: 200px;
+  margin-bottom: 300px;
+ }
+
+ .bg-quotes {
+  position: absolute;
+  width: 30px;
+  transform: translateY(-100%);
+  right: 0;
+  left: calc(100% - 90%);
  }
 
  .box_of_testimonials {
@@ -129,24 +198,59 @@ nav ul {
   margin-right: 10px;
  }
 
+ .container_04 p {
+  font-family: var(--Open_Sans);
+ }
+ 
+ .container_04 .name {
+  font-family: var(--Raleway);
+  font-weight: 700;
+  letter-spacing: 2px;
+ }
+
+ .container_04 .profission {
+  font-family: var(--Open_Sans);
+ }
+
  /* Container_05 */
 
  .container_05 {
+  position: absolute;
+  width: 80%;
+  margin: auto;
+  left: 0;
+  right: 0;
   text-align: center;
   background-color: var(--Dark_Blue_intro_and_email_sign_up_background);
   border-radius: 20px;
   padding: 20px;
- }
+  transform: translateY(-70%);
+  box-shadow: 10px 20px 5px #00000021;
+}
+
+.container_05 h3 {
+  font-family: var(--Raleway);
+}
+
+.container_05 p {
+  font-family: var(--Open_Sans);
+}
+
+.container_05 input::placeholder {
+  opacity: 0.5;
+}
 
 input {
-  width: 79%;
+  width: 240px;
   padding: 13px 20px;
   margin: 20px auto;
   border-radius: 30px;
+  border: none;
 }
 
 .container_05 button {
   margin-bottom: 10px;
+  font-family: var(--Raleway);
 
   border: none;
   background-color: var(--Blue_inside_call_to_action_gradient);
@@ -159,12 +263,34 @@ input {
 
 footer {
   background-color: var(--Dark_Blue_footer_background);
-  margin: -20px;
-  padding: 40px;
+  padding: 20px;
+  padding-top: 150px;
+  margin: 0px;
+}
+
+footer .logo {
+  width: 150px;
 }
 
 footer ul {
   padding: 0;
+  font-family: var(--Open_Sans);
+  margin-top: 40px;
+}
+
+footer li {
+  display: flex;
+  align-items: start;
+  margin-top: 10px;
+}
+
+footer img {
+  width: 15px;
+  margin-top: 5px;
+}
+
+footer span {
+  margin-left: 10px;
 }
 
 .icon_social_box {
@@ -184,16 +310,46 @@ footer ul {
   padding: 10px 13px !important;
 }
 
-/* */
+.none_mobile {
+  display: none;
+}
 
-/* */
+.error {
+  color: var(--Light_Red_error);
+  font-family: var(--Raleway);
+  font-size: 10px;
 
-/* */
+}
 
+/* Hover */
 
+header li:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  color: var(--White);
+}
 
+.container_01 button:hover {
+  cursor: pointer;
+  background-image: none;
+  background-color: var(--Cyan);
+}
 
+.box_of_fylo_works:hover {
+  filter: grayscale(100%);
+}
 
+.container_05 button:hover {
+  cursor: pointer;
+  background-image: none;
+  background-color: var(--Cyan);
+}
+
+.icon_social_box i:hover {
+  cursor: pointer;
+  color: var(--Cyan);
+  border-color: var(--Cyan);
+}
 
 }
 

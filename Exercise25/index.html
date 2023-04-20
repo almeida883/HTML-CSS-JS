@@ -47,22 +47,22 @@
     </div>
 
     <div class="container_02">
-      <div class="">
+      <div class="container_02_box">
         <img src="images/icon-access-anywhere.svg" alt="icon-access-anywhere" class="icon-access-anywhere">
         <h2>Access your files, anywhere</h2>
         <p>The ability to use a smartphone, tablet, or computer to access your account means your files follow you everywhere.</p>
       </div>
-      <div class="">
+      <div class="container_02_box">
         <img src="images/icon-security.svg" alt="icon-security" class="icon-security">
         <h2>Security you can trust</h2>
         <p>2-factor authentication and user-controlled encryption are just a couple of the security features we allow to help secure your files.</p>
       </div>
-      <div class="">
+      <div class="container_02_box">
         <img src="images/icon-collaboration.svg" alt="icon-collaboration" class="icon-collaboration">
         <h2>Real-time collaboration</h2>
         <p>Securely share files and folders with friends, family and colleagues for live collaboration. No email attachments required.</p>
       </div>
-      <div class="">
+      <div class="container_02_box">
         <img src="images/icon-any-file.svg" alt="icon-any-file" class="icon-any-file">
         <h2>Store any type of file</h2>
         <p>Whether you're sharing holidays photos or work documents, Fylo has you covered allowing for all file types to be securely stored and shared.</p>
@@ -75,11 +75,12 @@
         <h2>Stay productive, wherever you are</h2>
         <p>Never let location be an issue when accessing your files. Fylo has you covered for all of your file storage needs.</p>
         <p>Securely share files and folders with friends, family and colleagues for live collaboration. No email attachments required.</p>
-        <a href="">See how Fylo works <img src="images/icon-arrow.svg" alt="icon-arrow" class="icon-arrow"></a>
+        <div class="box_of_fylo_works"><a href="">See how Fylo works <img src="images/icon-arrow.svg" alt="icon-arrow" class="icon-arrow"></a></div>
       </div>
     </div>
 
     <div class="container_04">
+      <img src="images/bg-quotes.png" alt="bg-quotes" class="bg-quotes">
       <div class="box_of_testimonials">
         <p> Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.</p>
         <div class="information_box">
@@ -117,30 +118,39 @@
       <h3>Get early access today</h3>
       <p>It only takes a minute to sign up and our free starter tier is extremely generous. If you have any questions, our support team would be happy to help you.</p>
       <div class="">
-        <input type="text" placeholder="email@example.com">
-        <button>Get Started For Free</button>
+        <input type="text" placeholder="email@example.com" id="email-input">
+        <button id="submit-button">Get Started For Free</button>
+      </div>
+      <div class="error">
+        Please enter a valid email address
       </div>
     </div>
   </main>
   
   <footer>
     <img src="images/logo.svg" alt="logo" class="logo">
-    <div class="">
-      <ul>
+    <div class="footer_box">
+      <ul class="first_ul">
         <li>
           <img src="images/icon-location.svg" alt="icon-location" class="icon-location">
           <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
           dolore magna aliqua</span>
         </li>
-      </ul>
-      <ul>
-        <li>
-          <img src="images/icon-phone.svg" alt="icon-phone" class="icon-phone">
-          <span>+1-543-123-4567</span>
+        <li class="box_first_ul">
+          <div>
+            <img src="images/icon-phone.svg" alt="icon-phone" class="icon-phone">
+            <span>+1-543-123-4567</span>
+          </div>
+          <div class="none_mobile">
+            <img src="images/icon-email.svg" alt="icon-email" class="icon-email">
+            <span>example@fylo.com</span>
+          </div>
         </li>
         <li>
-          <img src="images/icon-email.svg" alt="icon-email" class="icon-email">
-          <span>example@fylo.com</span>
+          <div class="none_desktop">
+            <img src="images/icon-email.svg" alt="icon-email" class="icon-email">
+            <span>example@fylo.com</span>
+          </div>
         </li>
       </ul>
       <ul>
