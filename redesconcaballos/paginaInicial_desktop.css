@@ -81,9 +81,34 @@
 
     /* Main */
     /* Container 01 */
-    main {
 
+    .title {
+      width: 100%;
+      position: absolute;
+      top: 50%;
+      left: 65%;
+      transform: translate(-50%, -50%);
+      opacity: 0;
+      animation: fade-in 2s forwards;
+      font-size: 500%;
+      color: #f3d59f;
+      text-shadow: 1px 1px 20px black;
     }
+
+    .title div {
+      font-size: 50%;
+    }
+    
+    @keyframes fade-in {
+      from {
+        top: 0;
+        opacity: 0;
+      }
+      to {
+        top: 40%;
+        opacity: 1;
+      }
+    }    
 
     .asturiasPic {
         width: 100%;
@@ -199,6 +224,17 @@
             margin-left: 100px;
         }
 
+        .content_info_RutasyPrecios {
+          display: flex;
+          justify-content: center;
+          flex-wrap: wrap;
+          gap: 20px;
+        }
+
+        .info_RutasyPrecios img {
+          width: 400px;
+        }
+
         .container {
             position: relative;
           }
@@ -210,6 +246,7 @@
             border: none;
             border-radius: 4px;
             cursor: pointer;
+            width: 400px;
           }
           
           .dropdown-content {
@@ -221,6 +258,7 @@
             padding: 12px;
             border-radius: 4px;
             box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+            width: 375px;
           }
           
           .show {
@@ -230,11 +268,40 @@
 
          /* Container 04 */
          .container_04_main {
-           padding: 100px 10%;
+           padding: 50px 10%;
         }
 
+        .container_04_main h1 {
+          display: flex;
+          justify-content: center;
+        }
 
+        .container_04_main a {
+          text-decoration: none;
+          cursor: pointer;
 
+        }
+
+        .container_04_main button {
+          display: block;
+          margin: auto;
+
+          width: 380px;
+          height: 70px;
+          border: none;
+          background-color: var(--Bg-Green);
+          border-radius: 5px;
+          font-family: var(--Comme);
+          font-size: 25px;
+          padding: 0 40px;
+          cursor: pointer;
+          color: var(--White);
+          box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.171);
+        }
+
+        .container_04_main button:hover {
+          background-color: #696725;
+        }
 
     /* Footer */
 
