@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/scrollreveal"></script>     <!-- ScrollReveal -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>    <!-- OrbitAnimation -->
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    
+    <!-- Fontawesome -->
+    <script src="https://kit.fontawesome.com/8c15c4d746.js" crossorigin="anonymous"></script>
+
+    <!-- Css Files -->
+    <link rel="stylesheet" href="mobile.css"> 
+    <link rel="stylesheet" href="desktop.css">
+
+    <!-- Font -->  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+
+    <title>almeida</title>
+</head>
+<body>
+
+    <header>
+        <div class="header_container">
+            <img src="ProjetoLogo.png" alt="Logo" class="logo">
+            <h1>A TRANSFORMAR IDEIAS EM REALIDADE</h1>
+        </div>
+        <canvas id="matrix"></canvas>
+    </header>
+
+    <main>
+        <div class="main_container_01">
+            <div class="text-container">
+                <span id="typed-text"></span>
+                <div class="icons_links">
+                    <a href="https://www.linkedin.com/in/hugo-almeida-10552b245/" target="_blank" class="icon_linkedin"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/almeida883" target="_blank" class="icon_github"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+            <div class="container">
+                <img id="main-image" src="computerGuy.png" alt="Imagem Principal">
+                <img class="secondary-image s_i_01" src="htmlIcon.png" alt="Imagem Secundária 1">
+                <div class="s_i_01_text">HTML, ou HyperText Markup Language, é a linguagem padrão utilizada para criar e estruturar páginas da web. Ele define a estrutura e o conteúdo de um documento, permitindo a criação de links, imagens, tabelas e outros elementos. É a base fundamental para a construção de websites.</div>
+                <img class="secondary-image s_i_02" src="csslcon.png" alt="Imagem Secundária 2">
+                <div class="s_i_02_text">CSS (Cascading Style Sheets) é uma linguagem de estilo utilizada para definir a aparência e o design de elementos em uma página da web. Com o CSS, é possível controlar cores, fontes, espaçamentos e muitos outros atributos visuais. É fundamental para criar layouts atraentes e consistentes na web.
+                </div>
+                <img class="secondary-image s_i_03" src="jslcon.png" alt="Imagem Secundária 3">
+                <div class="s_i_03_text">JS (JavaScript) é uma linguagem de programação amplamente utilizada para adicionar interatividade e dinamismo a páginas da web. Com o JS, é possível manipular elementos, realizar validações, criar animações e muito mais. É uma ferramenta essencial para criar experiências interativas e funcionais na web.
+                </div>
+                <img class="secondary-image s_i_04" src="nodejsIcon.png" alt="Imagem Secundária 4">
+                <div class="s_i_04_text">Node.js é um ambiente de tempo de execução JavaScript que permite executar código JavaScript fora do navegador. Com o Node.js, é possível criar servidores web, desenvolver aplicativos de linha de comando e manipular arquivos no sistema operacional. É uma ferramenta poderosa para construir aplicações server-side escaláveis e eficientes.  
+                </div>
+
+            </div>
+        </div>
+        <div class="realized_works">
+            <h1 class="">Trabalhos Realizados</h1>
+            <div class="realized_works_container">
+                <div class="box01_realized_works b_r_w">
+                <i class="fa-solid fa-globe"></i>
+                <div class="tittle_of_r_w">Document Info</div>
+                <div class="bottom_of_r_w">
+                    <img src="htmlconSmall.png" alt="htmlconSmall" class="htmlconSmall">
+                    <img src="csslconSmall.png" alt="csslconSmall" class="csslconSmall">
+                </div>   
+                </div>
+                <div class="box02_realized_works b_r_w">
+                <i class="fa-solid fa-globe"></i>
+                <div class="tittle_of_r_w">Document Info</div>
+                <div class="bottom_of_r_w">
+                    <img src="htmlconSmall.png" alt="htmlconSmall" class="htmlconSmall">
+                    <img src="csslconSmall.png" alt="csslconSmall" class="csslconSmall">   
+                    <img src="jslconSmall.png" alt="jslconSmall" class="jslconSmall">
+                </div>   
+                </div>
+                <div class="box03_realized_works b_r_w">
+                <i class="fa-solid fa-globe"></i>
+                <div class="tittle_of_r_w">Document Info</div>
+                <div class="bottom_of_r_w">
+                    <img src="htmlconSmall.png" alt="htmlconSmall" class="htmlconSmall">
+                    <img src="csslconSmall.png" alt="csslconSmall" class="csslconSmall">   
+                    <img src="jslconSmall.png" alt="jslconSmall" class="jslconSmall">
+                </div>   
+                </div>
+                <div class="box04_realized_works b_r_w">
+                <i class="fa-solid fa-globe"></i>
+                <div class="tittle_of_r_w">Document Info</div>
+                <div class="bottom_of_r_w">
+                    <img src="htmlconSmall.png" alt="htmlconSmall" class="htmlconSmall">
+                    <img src="csslconSmall.png" alt="csslconSmall" class="csslconSmall">    
+                    <img src="jslconSmall.png" alt="jslconSmall" class="jslconSmall">
+                    <img src="json.png" alt="json" class="json">
+                </div>   
+                </div>
+            </div>
+        </div>
+        <form id="contact-form" action="enviar_email.php" method="POST">
+            <div class="form_tittle">Contacte-me</div>
+            <div class="letter-image">
+                    <div class="animated-mail">
+                      <div class="back-fold"></div>
+                      <div class="letter">
+                        <div class="letter-border"></div>
+                        <div class="letter-title"></div>
+                        <div class="letter-context"></div>
+                        <div class="letter-stamp">
+                          <div class="letter-stamp-inner"></div>
+                        </div>
+                      </div>
+                      <div class="top-fold"></div>
+                      <div class="body"></div>
+                      <div class="left-fold"></div>
+                    </div>
+                    <div class="shadow"></div>
+            </div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Mensagem:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            <button class="form_button" type="submit">Enviar</button>
+        </form>
+    </main>
+    <footer>
+        <div class="container_footer">
+            <img src="ProjetoLogo.png" alt="Logo" class="logo_footer">
+            <a href="https://www.linkedin.com/in/hugo-almeida-10552b245/" target="_blank" class="icon_linkedin_footer"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/almeida883" target="_blank" class="icon_github_footer"><i class="fa-brands fa-github"></i></a>
+        </div>
+    </footer>
+<!-- Js File -->
+<script type="text/javascript" src="index.js"></script>
+</body>
+</html>
