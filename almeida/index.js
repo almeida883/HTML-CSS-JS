@@ -41,8 +41,21 @@ ScrollReveal().reveal('form', {
   reset: true,
 });
 
+//Switch Language
+
+function toggleDropdown() {
+  var dropdown = document.getElementById("language-dropdown");
+  dropdown.classList.toggle("open");
+}
+
+function changeLanguage(language) {
+  // Aqui você pode adicionar o código para alterar o idioma da sua aplicação
+  console.log("Idioma alterado para:", language);
+}
+
+
 //Text Effect
-const text = "Bem-vindo ao meu site! Aqui você encontrará um showcase de todos os meus conhecimentos em diversas linguagens de programação. Explore os trabalhos realizados e descubra soluções criativas e inovadoras que desenvolvi. Fique à vontade para entrar em contato através do formulário abaixo, conectar-se no LinkedIn ou explorar os meus projetos no GitHub. Vamos juntos transformar ideias em realidade digital!"; 
+const text = "Bem-vindo ao meu site! Aqui você encontrará um showcase de todos os meus conhecimentos em diversas linguagens de programação. Explore os trabalhos realizados e descubra soluções criativas e inovadoras que eu desenvolvi. Fique à vontade para entrar em contato através do formulário abaixo, conectar-se no LinkedIn ou explorar os meus projetos no GitHub. Vamos juntos transformar ideias em realidade digital!"; 
 
 let index = 0;
 
