@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,8 +14,8 @@
     <script src="https://kit.fontawesome.com/8c15c4d746.js" crossorigin="anonymous"></script>
 
     <!-- Css Files -->
-    <link rel="stylesheet" href="mobile.css"> 
     <link rel="stylesheet" href="desktop.css">
+    <link rel="stylesheet" href="mobile.css"> 
 
     <!-- Font -->  
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,16 +27,16 @@
 <body>
 
     <div class="language-switch">
-        <img src="bandeiraENG.png" alt="UK Flag" class="flag" id="uk-flag" onclick="toggleDropdown()" />
+        <img src="bandeiraUK.png" alt="UK Flag" class="flag" id="uk-flag" onclick="toggleDropdown()" />
         <div class="dropdown" id="language-dropdown">
-          <img src="bandeiraPT.png" alt="Portugal Flag" class="flag" id="pt-flag" onclick="changeLanguage('pt')" />
+          <a href="../PT/index.html"><img src="bandeiraPT.png" alt="Portugal Flag" class="flag" id="pt-flag" onclick="changeLanguage('pt')" /></a>
         </div>
       </div>
 
     <header>
         <div class="header_container">
             <img src="ProjetoLogo.png" alt="Logo" class="logo">
-            <h1>A TRANSFORMAR IDEIAS EM REALIDADE</h1>
+            <h1>TURNING IDEAS INTO REALITY</h1>
         </div>
         <canvas id="matrix"></canvas>
     </header>
@@ -53,21 +53,21 @@
             <div class="container">
                 <img id="main-image" src="computerGuy.png" alt="Imagem Principal">
                 <img class="secondary-image s_i_01" src="htmlIcon.png" alt="Imagem Secundária 1">
-                <div class="s_i_01_text">HTML, ou HyperText Markup Language, é a linguagem padrão utilizada para criar e estruturar páginas da web. Ele define a estrutura e o conteúdo de um documento, permitindo a criação de links, imagens, tabelas e outros elementos. É a base fundamental para a construção de websites.</div>
+                <div class="s_i_01_text">HTML, or HyperText Markup Language, is the standard language used to create and structure web pages. It defines the structure and content of a document, allowing the creation of links, images, tables and other elements. It is the fundamental basis for building websites.</div>
                 <img class="secondary-image s_i_02" src="csslcon.png" alt="Imagem Secundária 2">
-                <div class="s_i_02_text">CSS (Cascading Style Sheets) é uma linguagem de estilo utilizada para definir a aparência e o design de elementos em uma página da web. Com o CSS, é possível controlar cores, fontes, espaçamentos e muitos outros atributos visuais. É fundamental para criar layouts atraentes e consistentes na web.
+                <div class="s_i_02_text">CSS (Cascading Style Sheets) is a style language used to define the look and design of elements on a web page. With CSS, you can control colors, fonts, spacing, and many other visual attributes. It is critical to creating attractive and consistent layouts across the web.
                 </div>
                 <img class="secondary-image s_i_03" src="jslcon.png" alt="Imagem Secundária 3">
-                <div class="s_i_03_text">JS (JavaScript) é uma linguagem de programação amplamente utilizada para adicionar interatividade e dinamismo a páginas da web. Com o JS, é possível manipular elementos, realizar validações, criar animações e muito mais. É uma ferramenta essencial para criar experiências interativas e funcionais na web.
+                <div class="s_i_03_text">JS (JavaScript) is a programming language widely used to add interactivity and dynamism to web pages. With JS, you can manipulate elements, perform validations, create animations, and much more. It is an essential tool for creating interactive and functional experiences on the web.
                 </div>
                 <img class="secondary-image s_i_04" src="nodejsIcon.png" alt="Imagem Secundária 4">
-                <div class="s_i_04_text">Node.js é um ambiente de tempo de execução JavaScript que permite executar código JavaScript fora do navegador. Com o Node.js, é possível criar servidores web, desenvolver aplicativos de linha de comando e manipular arquivos no sistema operacional. É uma ferramenta poderosa para construir aplicações server-side escaláveis e eficientes.  
+                <div class="s_i_04_text">Node.js is a JavaScript runtime environment that lets you run JavaScript code outside the browser. With Node.js, you can create web servers, develop command-line applications, and manipulate files on the operating system. It is a powerful tool for building scalable and efficient server-side applications.
                 </div>
 
             </div>
         </div>
         <div class="realized_works">
-            <h1 class="">Trabalhos Realizados</h1>
+            <h1 class="">Work Done</h1>
             <div class="realized_works_container">
                 <div class="box01_realized_works b_r_w">
                 <i class="fa-solid fa-globe"></i>
@@ -108,7 +108,7 @@
             </div>
         </div>
         <form id="contact-form" action="enviar_email.php" method="POST">
-            <div class="form_tittle">Contacte-me</div>
+            <div class="form_tittle">Contact me</div>
             <div class="letter-image">
                     <div class="animated-mail">
                       <div class="back-fold"></div>
@@ -128,9 +128,9 @@
             </div>
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" required>
-            <label for="message">Mensagem:</label>
+            <label for="message">Message:</label>
             <textarea id="message" name="message" rows="4" required></textarea>
-            <button class="form_button" type="submit">Enviar</button>
+            <button class="form_button" type="submit">Send</button>
         </form>
     </main>
     <footer>
