@@ -1,0 +1,206 @@
+%!Adobe-FontList 1.23
+%Locale:0x816
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:F:\0. PROJETOS\2. CLIENTES\CARPE DIEM\WEBSITE\Font\OFL.txt
+FileModTime:1690813574
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Tajawal-Black
+FamilyName:Tajawal
+StyleName:Black
+FullName:Tajawal Black
+MenuName:Tajawal Black
+StyleBits:0
+FamilyNameNative:Tajawal
+StyleNameNative:Black
+FullNameNative:Tajawal Black
+WritingScript:Arabic
+OutlineFileName:F:\0. PROJETOS\2. CLIENTES\CARPE DIEM\WEBSITE\Font\Tajawal-Black.ttf
+DataFormat:sfntData
+hasSVG:no
+hasCOLR:no
+VariableFontType:NonVariableFont
+FileLength:55712
+FileModTime:1663824430
+WeightClass:900
+WidthClass:5
+AngleClass:0
+NameArray:0,Win,1,Tajawal Black
+NameArray:0,Win,16,Tajawal
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Tajawal-Bold
+FamilyName:Tajawal
+StyleName:Bold
+FullName:Tajawal-Bold
+MenuName:Tajawal
+StyleBits:2
+FamilyNameNative:Tajawal
+StyleNameNative:Bold
+FullNameNative:Tajawal Bold
+WritingScript:Arabic
+OutlineFileName:F:\0. PROJETOS\2. CLIENTES\CARPE DIEM\WEBSITE\Font\Tajawal-Bold.ttf
+DataFormat:sfntData
+hasSVG:no
+hasCOLR:no
+VariableFontType:NonVariableFont
+FileLength:56568
+FileModTime:1663824430
+WeightClass:700
+WidthClass:5
+AngleClass:0
+NameArray:0,Win,1,Tajawal
+NameArray:0,Win,16,Tajawal
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Tajawal-ExtraBold
+FamilyName:Tajawal
+StyleName:ExtraBold
+FullName:Tajawal ExtraBold
+MenuName:Tajawal ExtraBold
+StyleBits:0
+FamilyNameNative:Tajawal
+StyleNameNative:ExtraBold
+FullNameNative:Tajawal ExtraBold
+WritingScript:Arabic
+OutlineFileName:F:\0. PROJETOS\2. CLIENTES\CARPE DIEM\WEBSITE\Font\Tajawal-ExtraBold.ttf
+DataFormat:sfntData
+hasSVG:no
+hasCOLR:no
+VariableFontType:NonVariableFont
+FileLength:56292
+FileModTime:1663824430
+WeightClass:800
+WidthClass:5
+AngleClass:0
+NameArray:0,Win,1,Tajawal ExtraBold
+NameArray:0,Win,16,Tajawal
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Tajawal-ExtraLight
+FamilyName:Tajawal
+StyleName:ExtraLight
+FullName:Tajawal ExtraLight
+MenuName:Tajawal ExtraLight
+StyleBits:0
+FamilyNameNative:Tajawal
+StyleNameNative:ExtraLight
+FullNameNative:Tajawal ExtraLight
+WritingScript:Arabic
+OutlineFileName:F:\0. PROJETOS\2. CLIENTES\CARPE DIEM\WEBSITE\Font\Tajawal-ExtraLight.ttf
+DataFormat:sfntData
+hasSVG:no
+hasCOLR:no
+VariableFontType:NonVariableFont
+FileLength:52444
+FileModTime:1663824430
+WeightClass:275
+WidthClass:5
+AngleClass:0
+NameArray:0,Win,1,Tajawal ExtraLight
+NameArray:0,Win,16,Tajawal
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Tajawal-Light
+FamilyName:Tajawal
+StyleName:Light
+FullName:Tajawal Light
+MenuName:Tajawal Light
+StyleBits:0
+FamilyNameNative:Tajawal
+StyleNameNative:Light
+FullNameNative:Tajawal Light
+WritingScript:Arabic
+OutlineFileName:F:\0. PROJETOS\2. CLIENTES\CARPE DIEM\WEBSITE\Font\Tajawal-Light.ttf
+DataFormat:sfntData
+hasSVG:no
+hasCOLR:no
+VariableFontType:NonVariableFont
+FileLength:57320
+FileModTime:1663824430
+WeightClass:300
+WidthClass:5
+AngleClass:0
+NameArray:0,Win,1,Tajawal Light
+NameArray:0,Win,16,Tajawal
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Tajawal-Medium
+FamilyName:Tajawal
+StyleName:Medium
+FullName:Tajawal-Medium
+MenuName:Tajawal Medium
+StyleBits:0
+FamilyNameNative:Tajawal
+StyleNameNative:Medium
+FullNameNative:Tajawal Medium
+WritingScript:Arabic
+OutlineFileName:F:\0. PROJETOS\2. CLIENTES\CARPE DIEM\WEBSITE\Font\Tajawal-Medium.ttf
+DataFormat:sfntData
+hasSVG:no
+hasCOLR:no
+VariableFontType:NonVariableFont
+FileLength:57360
+FileModTime:1663824430
+WeightClass:500
+WidthClass:5
+AngleClass:0
+NameArray:0,Win,1,Tajawal Medium
+NameArray:0,Win,16,Tajawal
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Tajawal-Regular
+FamilyName:Tajawal
+StyleName:Regular
+FullName:Tajawal
+MenuName:Tajawal
+StyleBits:0
+FamilyNameNative:Tajawal
+StyleNameNative:Regular
+FullNameNative:Tajawal Regular
+WritingScript:Arabic
+OutlineFileName:F:\0. PROJETOS\2. CLIENTES\CARPE DIEM\WEBSITE\Font\Tajawal-Regular.ttf
+DataFormat:sfntData
+hasSVG:no
+hasCOLR:no
+VariableFontType:NonVariableFont
+FileLength:56088
+FileModTime:1663824430
+WeightClass:400
+WidthClass:5
+AngleClass:0
+NameArray:0,Win,1,Tajawal
+NameArray:0,Win,16,Tajawal
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:F:\0. PROJETOS\2. CLIENTES\CARPE DIEM\WEBSITE\Font\Tajawal.zip
+FileModTime:1690813576
+%EndFont
+

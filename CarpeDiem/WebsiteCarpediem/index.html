@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="">
+    
+    <!-- Fontawesome -->
+    <script src="https://kit.fontawesome.com/8c15c4d746.js" crossorigin="anonymous"></script>
+
+    <!-- Css Files -->
+    <link rel="stylesheet" href="assets/css/styleDesktop.css">
+    <link rel="stylesheet" href="assets/css/styleMobile.css"> 
+
+    <!-- Font -->  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</head>
+<body>
+    <div id="modal-background"></div>
+    <img src="assets/imagens/lado_esquerdo.png" alt="imagem de fundo" class="lado_esquerdo">
+    <img src="assets/imagens/lado_direito.png" alt="imagem de fundo" class="lado_direito">
+    <header>
+        <nav class="nav-desktop">
+            <div class="logo">
+                <div>Carpe Diem</div>
+                <ul>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#feedbacks">Feedbacks</a></li>
+                </ul>
+            </div>
+            <div class="redes-sociais">
+                <a href="https://www.facebook.com/CarpeDiem.AlexandraTerapeuta" target="_blank"><i class="fa-brands fa-facebook-f" target="_blank"></i></a>
+                <a href="https://www.tiktok.com/@carpediemvivemomento" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+                <a href="https://www.instagram.com/carpediem.vivemomento/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.youtube.com/@alexandraaldeia8751" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+        </nav>
+        <nav class="nav-mobile">
+            <div class="logo">
+                <div>Carpe Diem</div>
+            </div>
+            <div class="right_box">
+                <div class="redes-sociais">
+                    <a href="https://www.facebook.com/CarpeDiem.AlexandraTerapeuta" target="_blank"><i class="fa-brands fa-facebook-f" target="_blank"></i></a>
+                    <a href="https://www.tiktok.com/@carpediemvivemomento" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+                    <a href="https://www.instagram.com/carpediem.vivemomento/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/@alexandraaldeia8751" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+                <span id="menu-toggle">&#9776;</span>
+                <ul id="menu">
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#feedbacks">Feedbacks</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="header_main">
+            <img src="assets/imagens/cilindro4_capa.png" alt="imagem" class="imagem_main">
+            <div>
+                <h1>TERAPEUTA ALEXANDRA</h1>
+                <div class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem magni repellat obcaecati repellendus debitis est deleniti saepe laudantium! Laborum minus error dolores odit, reiciendis obcaecati. Repellat ullam natus illum tempora placeat quaerat ducimus earum inventore doloremque. Eveniet sapiente magni fugiat!</div>
+                <button class="cta"><a href="https://calendly.com/almeidagamer99"  target="_blank">AGENDE A SUA CONSULTA</a></button>
+            </div>
+        </div>
+        <div class="container">
+            <h1 id="servicos">Serviços</h1>
+            <div class="row">
+                <div class="column reiki-c">Reiki</div>
+                <div class="column mesaRadionica-c">Mesa Radiónica</div>
+                <div class="column meditacao-c">Meditação</div>
+            </div>
+            <div class="row">
+                <div class="column consultaDeTarot-c">Consulta De Tarot</div>
+                <div class="column hoponopono-c">Hoponopono</div>
+                <div class="column barrasDeAcess-c">Barras De Acess</div>
+            </div>
+            <div class="row">
+                <div class="column-3rd tenicaDeEft-c">Ténica De Eft</div>
+                <div class="column-3rd terapiaMultidimensional-c">Terapia Multidimensional</div>
+            </div>
+            <div class="row">
+             <div class="column-full">
+                  <div id="feedbacks">Feedbacks</div>
+                <div class="carousel">
+                    <button class="carousel-btn" id="prevBtn"><i class="fa-sharp fa-solid fa-chevron-left"></i></button>
+                    <div id="feedback-container">
+                      <div class="feedback" id="feedback1">"Tive conhecimento desta técnica, experimentei e fiquei surpreendida com os resultados tão rápidos!"</div>
+                      <div class="feedback" id="feedback2">"Trabalhei com a Alexandra para tratar uma situação que há algum tempo mexia comigo, e no fim tudo melhorou e já não me incomodava."</div>
+                      <div class="feedback" id="feedback3">"Amei o atendimento da Alexandra! Estou tão satisfeita com os resultados finais! Já indiquei a algumas pessoas mais próximas."</div>
+                      <div class="feedback" id="feedback4">"Fiz uma consulta de Terapia Multidimensional e quando parecia que nada podia melhorar na minha situação, do nada as coisas começaram a ir ao sitio! Um sentimento de leveza enorme."</div>
+                    </div>
+                    <button class="carousel-btn" id="nextBtn"><i class="fa-sharp fa-solid fa-chevron-right"></i></button>
+                    </div>
+             </div>
+            <div class="container-box reiki hidden">
+                <button class="fechar"><i class="fa-solid fa-xmark"></i></button>
+                <div>reiki Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum nisi perspiciatis fugit autem quasi minima natus placeat aspernatur rerum laudantium!</div>
+                <button class="cta"><a href="https://calendly.com/almeidagamer99"  target="_blank">AGENDE A SUA CONSULTA</a></button>
+            </div>
+            <div class="container-box mesaRadionica hidden">
+                <button class="fechar"><i class="fa-solid fa-xmark"></i></button>
+                <div>mesaRadionica Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum nisi perspiciatis fugit autem quasi minima natus placeat aspernatur rerum laudantium!</div>
+                <button class="cta"><a href="https://calendly.com/almeidagamer99"  target="_blank">AGENDE A SUA CONSULTA</a></button>
+            </div>
+            <div class="container-box meditacao hidden">
+                <button class="fechar"><i class="fa-solid fa-xmark"></i></button>
+                <div>meditacao Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum nisi perspiciatis fugit autem quasi minima natus placeat aspernatur rerum laudantium!</div>
+                <button class="cta"><a href="https://calendly.com/almeidagamer99"  target="_blank">AGENDE A SUA CONSULTA</a></button>
+            </div>
+            <div class="container-box consultaDeTarot hidden">
+                <button class="fechar"><i class="fa-solid fa-xmark"></i></button>
+                <div>consultaDeTarot Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum nisi perspiciatis fugit autem quasi minima natus placeat aspernatur rerum laudantium!</div>
+                <button class="cta"><a href="https://calendly.com/almeidagamer99"  target="_blank">AGENDE A SUA CONSULTA</a></button>
+            </div>
+            <div class="container-box hoponopono hidden">
+                <button class="fechar"><i class="fa-solid fa-xmark"></i></button>
+                <div>hoponopono Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum nisi perspiciatis fugit autem quasi minima natus placeat aspernatur rerum laudantium!</div>
+                <button class="cta"><a href="https://calendly.com/almeidagamer99"  target="_blank">AGENDE A SUA CONSULTA</a></button>
+            </div>
+            <div class="container-box barrasDeAcess hidden">
+                <button class="fechar"><i class="fa-solid fa-xmark"></i></button>
+                <div>barrasDeAcess Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum nisi perspiciatis fugit autem quasi minima natus placeat aspernatur rerum laudantium!</div>
+                <button class="cta"><a href="https://calendly.com/almeidagamer99"  target="_blank">AGENDE A SUA CONSULTA</a></button>
+            </div>
+            <div class="container-box tenicaDeEft hidden">
+                <button class="fechar"><i class="fa-solid fa-xmark"></i></button>
+                <div>tenicaDeEft Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum nisi perspiciatis fugit autem quasi minima natus placeat aspernatur rerum laudantium!</div>
+                <button class="cta"><a href="https://calendly.com/almeidagamer99"  target="_blank">AGENDE A SUA CONSULTA</a></button>
+            </div>
+            <div class="container-box terapiaMultidimensional hidden">
+                <button class="fechar"><i class="fa-solid fa-xmark"></i></button>
+                <div>terapiaMultidimensional Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum nisi perspiciatis fugit autem quasi minima natus placeat aspernatur rerum laudantium!</div>
+                <button class="cta"><a href="https://calendly.com/almeidagamer99"  target="_blank">AGENDE A SUA CONSULTA</a></button>
+            </div>
+        </div>
+
+        <div class="cta_middle">
+            <button class="cta">
+                <a href="https://calendly.com/almeidagamer99"  target="_blank">AGENDE A SUA CONSULTA</a>
+            </button>
+        </div>
+    </main>
+    <footer>
+        <div class="logo">
+            <div>Carpe Diem</div>
+        </div>
+        <div class="redes-sociais">
+            <a href="https://www.facebook.com/CarpeDiem.AlexandraTerapeuta" target="_blank"><i class="fa-brands fa-facebook-f" target="_blank"></i></a>
+            <a href="https://www.tiktok.com/@carpediemvivemomento" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="https://www.instagram.com/carpediem.vivemomento/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.youtube.com/@alexandraaldeia8751" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+    </footer>
+    <!-- Js File -->
+<script type="text/javascript" src="assets/js/index.js"></script>
+</body>
+</html>
